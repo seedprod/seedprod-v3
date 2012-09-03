@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-		<div id="fp-features" class="row">
+	<div class="white-well">
+		<div id="fp-features" class="row-fluid">
 		  <div class="span4">
 		  	<div>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/display.png">
@@ -21,7 +22,7 @@
 		  </div>
 		</div>
 
-		<div id="fp-testimonials" class="row">
+		<div id="fp-testimonials" class="row-fluid">
 		  <div class="span3">
 			<div class="fp-testimonials">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/buzz-1.jpg" class="thumbnail">
@@ -60,7 +61,7 @@
 		  </div>
 		</div>
 		<!-- Goto Features -->
-		<div class="well">
+
 		<div id="footer-goto-features">
 			<h3>See why Matt Cutts from Google thinks a Coming Soon page is a Good Idea...</h3>
 			<iframe width="560" height="315" src="http://www.youtube.com/embed/R9JvBLjLrUI" frameborder="0" allowfullscreen></iframe>
@@ -68,12 +69,12 @@
 		    <h3>Then check out the Features and see how SeedProd can make your Website Launch a Success!</h3>
 		    <a href="/features/" class="btn btn-large btn-seedprod"><i class="icon-star icon-white"></i> See the Features</a>
 		</div>
-		</div>
-		<br><br>
+		
 		<!-- Integrated With -->
 		<div id="integration-partners">
 		    <strong>Integrated with these awesome companies...</strong>
 		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/integration-logos.png" class="thumbnail">
 		</div>
+	</div>
 
 <?php get_footer(); ?>
