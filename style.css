@@ -6807,9 +6807,8 @@ a#hellobar-open:hover {
   font-size: 14px;
 }
 #bd {
-  padding: 40px 0;
+  padding: 20px 0 40px;
 }
-/* Common */
 .white-well {
   background: white;
   margin: 0 0 20px 0;
@@ -6848,6 +6847,19 @@ a#hellobar-open:hover {
   box-shadow: none;
 }
 /* Front Page */
+.home #bd {
+  padding-top: 0;
+}
+.home .white-well {
+  margin: 0;
+}
+.home .btn-seedprod {
+  font-weight: bold;
+}
+#btn-action .thin {
+  font-size: 19px;
+  font-weight: 300;
+}
 #featured {
   text-align: center;
   background-color: transparent;
@@ -6858,11 +6870,10 @@ a#hellobar-open:hover {
 }
 #featured h1,
 #featured p {
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+  color: #000;
 }
 #fp-features {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 #fp-features img {
@@ -7036,14 +7047,8 @@ a#hellobar-open:hover {
 .btn-seedprod.active {
   background-color: #670606 \9;
 }
-#btn-action .thin {
-  font-size: 19px;
-  font-weight: 300;
-}
 /* Footer */
 #ft {
-  background: #f5f5f5;
-  border-top: #e6e6e6 1px solid;
   font-size: 13px;
 }
 #footer-wrap {

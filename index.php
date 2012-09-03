@@ -1,5 +1,30 @@
 <?php get_header(); ?>
+<div class="row-fluid">
+	<div class="span9">
+	<?php if ( is_archive() ) { ?>                 
+        <div id="archive-page-title"> 
+            <h3> 
+                <?php _e( 'Archives For ', 'standard' ); ?>
+                <?php if( standard_is_date_archive() ) { ?>
+                	<?php echo standard_get_date_archive_label(); ?>
+            	<?php } elseif ( is_author() ) { ?>
+            		<?php $author_data = get_userdata( get_query_var('author') ); ?>
+                	<?php echo $author_data->display_name; ?>
+                <?php } elseif ( '' == single_tag_title( '', false ) ) { ?> 
+                    <?php echo get_cat_name( get_query_var( 'cat' ) ); ?> 
+                <?php } else { ?> 
+                    <?php echo single_tag_title() ?> 
+                <?php } // end if/else ?> 
+            </h3>
+    <?php if( '' != category_description() ) { ?>
+               <?php echo category_description(); ?>
+            <?php } // end if ?> 
+        </div> 
+    <?php } // end if ?> 
+
+
 	<?php while ( have_posts() ) { ?>
+<div class="white-well">
 		<?php the_post(); ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'post format-standard clearfix' ); ?>>
 
@@ -85,7 +110,11 @@
 	</div><!-- /.post-meta -->
 
 </div> <!-- /#post- -->
+</div> <!-- .white-well -->
 	<?php } // end while ?>
 
-	<?php get_template_part( 'pagination' ); ?>
+	<?php
+	 get_template_part( 'pagination' ); ?>
+</div>
+</div>
 <?php get_footer(); ?>

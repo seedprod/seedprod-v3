@@ -63,7 +63,7 @@
 			</div>
 		</div> <!-- /.navbar -->
 		<?php
-		if ( is_home() ) {
+		if ( is_front_page() ) {
 			get_template_part( 'content', 'featured' );
 		}
 		?>

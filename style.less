@@ -22,10 +22,8 @@ body {
   font-size:14px;
 }
 #bd {
-  padding: 40px 0;
+  padding: 20px 0 40px;
 }
-
-/* Common */
 
 .white-well{
   background: white;
@@ -68,6 +66,25 @@ body {
 }
 
 /* Front Page */
+
+.home #bd{
+  padding-top: 0;
+}
+
+.home .white-well{
+  margin:0;
+}
+
+.home .btn-seedprod{
+  font-weight:bold;
+}
+
+#btn-action .thin {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+
 #featured {
   text-align: center;
   background-color: transparent;
@@ -77,14 +94,14 @@ body {
     margin-top: 30px;
   }
   h1, p {
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+    color: #000;
+    //text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
   }
 }
 
 
 #fp-features {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 50px;
   img {
     float: left;
@@ -236,15 +253,11 @@ body {
 .btn-seedprod {
   .buttonBackground(@btnSeedProdBackground, @btnSeedProdBackgroundHighlight);
 }
-#btn-action .thin {
-  font-size: 19px;
-  font-weight: 300;
-}
 
 /* Footer */
 #ft{
-  background: #f5f5f5;
-  border-top: #e6e6e6 1px solid;
+  //background: #f5f5f5;
+  //border-top: #e6e6e6 1px solid;
   font-size:13px;
 }
 #footer-wrap {
