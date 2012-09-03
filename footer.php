@@ -5,33 +5,30 @@
 	    <div class="container">
 		    <div id="footer-wrap">
 				<div class="row">
-					<div class="span3">
+					<div class="span9">
 						<div id="footer-1">
+							<span>
+								<a href="http://twitter.com/seedprod"><img id="twitter-icon" style="padding-right:3px" src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-twitter.png"></a>
+								<a href="http://feeds.feedburner.com/seedprod"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-feed.png"></a>
+							</span>
 							<ul class="unstyled">
+								<li><a href="/about/" style="padding-left:0">About</a></li>
+								<li><a href="/contact/">Contact</a></li>
 								<li><a href="/testimonials/">Testimonials</a></li>
-								<li><a href="/about/">About Us</a></li>
-								<li><a href="/contact/">Contact Us</a></li>
 								<li><a href="/affiliates/">Affiliates</a></li>
-								<li><a href="/refunds/">Refund Policy</a></li>
-								<li><a href="/submit-site/">Submit a Site</a></li>
 								<li><a href="/press-kit/">Press Kit</a></li>
-							</ul>
+								<li class="sep">|</li>
+								<li class="dlist"><a href="/press-kit/">Privacy</a></li>
+								<li class="dlist"><a href="/refunds/">Refunds</a></li>
+								<li class="dlist"><a href="/press-kit/">Terms</a></li>
+							</ul>							
 						</div>
 					</div>
-					<div class="span6">
-						<div id="footer-2">
-							<a href="http://twitter.com/seedprod"><img id="twitter-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-twitter.png"></a>
-							<a href="http://feeds.feedburner.com/seedprod"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-feed.png"></a>
-							<p>
-								<a href="/privacy/">Privacy</a> | <a href="/terms/">Terms</a>
-							</p>
-						</div>
-					</div> 
 					<div class="span3">
 						<div id="footer-3">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-footer.png">
 							<p>
-								Copyright &copy; 2012 SeedProd<br>All rights reserved
+								Copyright &copy; <?php echo date('Y') ?> SeedProd
 							</p>
 						</div>
 					</div>

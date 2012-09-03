@@ -60,7 +60,7 @@
 					<span class="the-time"><?php the_time( get_option( 'date_format' ) ); ?></span>
 				<?php } // end if/else ?>
 				<?php if( comments_open() ) { ?>
-					<span class="the-comment-link">&mdash;&nbsp;<?php comments_popup_link( __( 'Leave a comment', 'standard' ), __( '1 Comment', 'standard' ), __( '% Comments', 'standard' ), '', '' ); ?></span>
+					<span class="the-comment-link">&mdash;&nbsp;<?php comments_popup_link( '<i class="icon-comment"></i>', '1 <i class="icon-comment"></i>','% <i class="icon-comment"></i>', '', '' ); ?></span>
 				<?php } // end if ?>
 			</div><!-- /.post-header-meta -->
 		</div><!-- /.title-wrap -->
@@ -90,7 +90,7 @@
 			
 				<?php $category_list = get_the_category_list( __( ', ', 'standard' ) ); ?>
 				<?php if( $category_list ) { ?>
-					<?php printf( '<span class="the-category">' . __( 'In %1$s', 'standard' ) . '</span>', $category_list ); ?>
+					<?php printf( '<span class="the-category">' . __( '<i class="icon-tag"></i> %1$s', 'standard' ) . '</span>', $category_list ); ?>
 				<?php } // end if ?>
 				
 				<?php $tag_list = get_the_tag_list( '', __( ', ', 'standard' ) ); ?>
@@ -115,6 +115,9 @@
 
 	<?php
 	 get_template_part( 'pagination' ); ?>
+</div>
+<div class="span3">
+<?php get_sidebar(); ?>
 </div>
 </div>
 <?php get_footer(); ?>
