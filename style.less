@@ -1,0 +1,560 @@
+/*  
+Theme Name: SeedProd
+Theme URI: http://www.seedprod.com
+Version: 2.0.0
+Description: I'm on a boat!
+Author: SeedProd
+Author URI: http://www.seedprod.com
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+@import 'bootstrap/less/bootstrap.less';
+@import 'bootstrap/less/responsive.less';
+@import 'hellobar-solo/hellobar.less';
+
+@linkColor: #F21414;
+
+/* SeedProd Style */ 
+ 
+/* Global */ 
+body {
+  background: #f5f5f5 url(images/noise.png);
+  font-size:14px;
+}
+#bd {
+  padding: 40px 0;
+}
+
+/* Widgets */
+
+/* Header */
+#hd{
+  padding-top: 20px;
+}
+
+/* Nav */
+.navbar-inverse .nav > li > a {
+  color:black;
+  text-shadow: 0 -1px 0 #fff;
+  font-weight:bold;
+}
+.navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover {
+  color: @linkColor;
+}
+.navbar .nav {
+  margin-top: 25px;
+}
+.navbar-inverse .navbar-inner{
+  background:none;
+  border: none;
+  box-shadow: none;
+}
+
+/* Front Page */
+#featured {
+  text-align: center;
+  background-color: transparent;
+  padding: 20px;
+
+  img {
+    margin-top: 30px;
+  }
+  h1, p {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+  }
+}
+
+
+#fp-features {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  img {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+}
+
+
+#fp-testimonials {
+  margin-bottom: 50px;
+  img {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+  cite {
+    color: #999;
+  }
+  blockquote {
+    padding: 0;
+    margin: 0 0 18px;
+    border-left: none;
+    font-family: Georgia,serif;
+    font-style: italic;
+    font-size: 14px;
+  }
+}
+
+#footer-goto-features {
+  text-align: center;
+  margin: 10px 0;
+  h3 {
+    margin-bottom: 10px;
+  }
+}
+
+#integration-partners img {
+  margin: 10px auto;
+  display: block;
+}
+
+/* Features Page */
+
+.product-btns {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#product-banner {
+  position: relative;
+
+  a {
+    position: absolute;
+    top: 60%;
+    left: 18%;
+  }
+
+  .product-btns {
+    position: absolute;
+    top: 60%;
+    left: -4%;
+
+    a {
+      position: relative;
+    }
+  }
+}
+
+#feature-list{
+  ul li {
+    padding-bottom: 5px;
+  }
+  p{
+    font-size:14px;
+    line-height:2opx;
+  }
+  .fl-feature {
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+}
+
+/* Pricing Page */
+#pricing > div > table {
+  width: 90%;
+  margin: 0 auto;
+}
+#pricing > div > table th, #pricing > div > table td {
+  text-align: center;
+}
+#pricing > div > table th {
+  color: #fff;
+  font-size: 16px;
+  background-color: #028320;
+  background-image: -moz-linear-gradient(top, #029725, #016519);
+  background-image: -ms-linear-gradient(top, #029725, #016519);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#029725), to(#016519));
+  background-image: -webkit-linear-gradient(top, #029725, #016519);
+  background-image: -o-linear-gradient(top, #029725, #016519);
+  background-image: linear-gradient(top, #029725, #016519);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#029725', endColorstr='#016519', GradientType=0);
+  border-color: #016519 #016519 #001906;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+#pricing table th {
+  vertical-align: top;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+#pricing table td.feat a,
+#pricing table td.feat a:visited,
+#pricing table td.feat a:hover,
+#pricing table td.feat a:active {
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+  cursor: help;
+}
+#pricing table td {
+  vertical-align: middle;
+  font-weight: bold;
+}
+#price-row td {
+  padding: 15px 0;
+}
+
+.product-testimonial blockquote {
+  padding: 0;
+  margin: 0 0 18px;
+  border-left: none;
+  font-family: Georgia,serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+#faqs{
+  margin-bottom:20px;
+}
+
+/* Buttons */
+@btnSeedProdBackground:              @linkColor;
+@btnSeedProdBackgroundHighlight:     darken(@btnSeedProdBackground, 20%);
+.btn-seedprod {
+  .buttonBackground(@btnSeedProdBackground, @btnSeedProdBackgroundHighlight);
+}
+#btn-action .thin {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+/* Footer */
+#ft{
+  background: #f5f5f5;
+  border-top: #e6e6e6 1px solid;
+  font-size:13px;
+}
+#footer-wrap {
+  margin: 0 auto;
+  padding: 30px 0 10px;
+  a {
+    color: #444;
+  }
+  #footer-2 {
+    text-align: center;
+  }
+  #footer-3 {
+    text-align: right;
+  }
+}
+
+/* WordPress Core */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/* Prettify */
+pre {
+  background-color: transparent;
+}
+.highlight .hll {
+  background-color: #49483e;
+}
+.highlight {
+  background: #272822;
+  color: #f8f8f2;
+}
+.highlight .c {
+  color: #75715e;
+}
+/* Comment */
+.highlight .err {
+  color: #960050;
+  background-color: #1e0010;
+}
+/* Error */
+.highlight .k {
+  color: #66d9ef;
+}
+/* Keyword */
+.highlight .l {
+  color: #ae81ff;
+}
+/* Literal */
+.highlight .n {
+  color: #f8f8f2;
+}
+/* Name */
+.highlight .o {
+  color: #f92672;
+}
+/* Operator */
+.highlight .p {
+  color: #f8f8f2;
+}
+/* Punctuation */
+.highlight .cm {
+  color: #75715e;
+}
+/* Comment.Multiline */
+.highlight .cp {
+  color: #75715e;
+}
+/* Comment.Preproc */
+.highlight .c1 {
+  color: #75715e;
+}
+/* Comment.Single */
+.highlight .cs {
+  color: #75715e;
+}
+/* Comment.Special */
+.highlight .ge {
+  font-style: italic;
+}
+/* Generic.Emph */
+.highlight .gs {
+  font-weight: bold;
+}
+/* Generic.Strong */
+.highlight .kc {
+  color: #66d9ef;
+}
+/* Keyword.Constant */
+.highlight .kd {
+  color: #66d9ef;
+}
+/* Keyword.Declaration */
+.highlight .kn {
+  color: #f92672;
+}
+/* Keyword.Namespace */
+.highlight .kp {
+  color: #66d9ef;
+}
+/* Keyword.Pseudo */
+.highlight .kr {
+  color: #66d9ef;
+}
+/* Keyword.Reserved */
+.highlight .kt {
+  color: #66d9ef;
+}
+/* Keyword.Type */
+.highlight .ld {
+  color: #e6db74;
+}
+/* Literal.Date */
+.highlight .m {
+  color: #ae81ff;
+}
+/* Literal.Number */
+.highlight .s {
+  color: #e6db74;
+}
+/* Literal.String */
+.highlight .na {
+  color: #a6e22e;
+}
+/* Name.Attribute */
+.highlight .nb {
+  color: #f8f8f2;
+}
+/* Name.Builtin */
+.highlight .nc {
+  color: #a6e22e;
+}
+/* Name.Class */
+.highlight .no {
+  color: #66d9ef;
+}
+/* Name.Constant */
+.highlight .nd {
+  color: #a6e22e;
+}
+/* Name.Decorator */
+.highlight .ni {
+  color: #f8f8f2;
+}
+/* Name.Entity */
+.highlight .ne {
+  color: #a6e22e;
+}
+/* Name.Exception */
+.highlight .nf {
+  color: #a6e22e;
+}
+/* Name.Function */
+.highlight .nl {
+  color: #f8f8f2;
+}
+/* Name.Label */
+.highlight .nn {
+  color: #f8f8f2;
+}
+/* Name.Namespace */
+.highlight .nx {
+  color: #a6e22e;
+}
+/* Name.Other */
+.highlight .py {
+  color: #f8f8f2;
+}
+/* Name.Property */
+.highlight .nt {
+  color: #f92672;
+}
+/* Name.Tag */
+.highlight .nv {
+  color: #f8f8f2;
+}
+/* Name.Variable */
+.highlight .ow {
+  color: #f92672;
+}
+/* Operator.Word */
+.highlight .w {
+  color: #f8f8f2;
+}
+/* Text.Whitespace */
+.highlight .mf {
+  color: #ae81ff;
+}
+/* Literal.Number.Float */
+.highlight .mh {
+  color: #ae81ff;
+}
+/* Literal.Number.Hex */
+.highlight .mi {
+  color: #ae81ff;
+}
+/* Literal.Number.Integer */
+.highlight .mo {
+  color: #ae81ff;
+}
+/* Literal.Number.Oct */
+.highlight .sb {
+  color: #e6db74;
+}
+/* Literal.String.Backtick */
+.highlight .sc {
+  color: #e6db74;
+}
+/* Literal.String.Char */
+.highlight .sd {
+  color: #e6db74;
+}
+/* Literal.String.Doc */
+.highlight .s2 {
+  color: #e6db74;
+}
+/* Literal.String.Double */
+.highlight .se {
+  color: #ae81ff;
+}
+/* Literal.String.Escape */
+.highlight .sh {
+  color: #e6db74;
+}
+/* Literal.String.Heredoc */
+.highlight .si {
+  color: #e6db74;
+}
+/* Literal.String.Interpol */
+.highlight .sx {
+  color: #e6db74;
+}
+/* Literal.String.Other */
+.highlight .sr {
+  color: #e6db74;
+}
+/* Literal.String.Regex */
+.highlight .s1 {
+  color: #e6db74;
+}
+/* Literal.String.Single */
+.highlight .ss {
+  color: #e6db74;
+}
+/* Literal.String.Symbol */
+.highlight .bp {
+  color: #f8f8f2;
+}
+/* Name.Builtin.Pseudo */
+.highlight .vc {
+  color: #f8f8f2;
+}
+/* Name.Variable.Class */
+.highlight .vg {
+  color: #f8f8f2;
+}
+/* Name.Variable.Global */
+.highlight .vi {
+  color: #f8f8f2;
+}
+/* Name.Variable.Instance */
+.highlight .il {
+  color: #ae81ff;
+}
+/* Literal.Number.Integer.Long */
+

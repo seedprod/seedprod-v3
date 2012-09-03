@@ -1,7 +1,7 @@
     </div> <!-- /.container -->
     </div> <!-- /#db -->
 
-    <div id="ft">
+    <footer id="ft">
 	    <div class="container">
 		    <div id="footer-wrap">
 				<div class="row">
@@ -36,9 +36,9 @@
 						</div>
 					</div>
 				</div>
-		      </div><!-- #footer-wrap -->
-	      </div>
-    </div><!-- #ft -->
+		    </div><!-- #footer-wrap -->
+	    </div>
+    </footer><!-- #ft -->
 
     </div><!-- #pg -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/bootstrap/js/bootstrap.min.js"></script>
