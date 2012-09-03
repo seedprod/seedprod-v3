@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div class="well">
+	<div class="white-well">
 		<!-- Banner -->
 		<div id="product-banner">
 		    <img class="thumbnail" src="<?php echo get_stylesheet_directory_uri(); ?>/images/products/banner-coming-soon-pro.jpg">

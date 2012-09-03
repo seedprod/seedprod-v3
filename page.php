@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	
+	<div class="white-well">
 	<?php if ( have_posts() ) { ?>
 		<?php while ( have_posts() ) {
 			 the_post(); ?>
@@ -15,5 +15,6 @@
 			</div> <!-- /#post- -->
 		<?php } // end while ?>
 	<?php } // end if ?>
+</div>
 
 <?php get_footer(); ?>
