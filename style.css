@@ -9505,7 +9505,7 @@ ul.digital-downloads li .count {
   background: #fff;
   border: 1px solid #E3E3E3;
 }
-td.product-name {
+.cart td.product-name {
   font-size: 22px;
 }
 .seed-remove {
