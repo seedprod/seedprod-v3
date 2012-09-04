@@ -17,12 +17,12 @@ global $woocommerce;
 <table class="shop_table cart" cellspacing="0">
 	<thead>
 		<tr>
-			<th class="product-remove">&nbsp;</th>
+			<!-- <th class="product-remove">&nbsp;</th> -->
 <!-- 			<th class="product-thumbnail">&nbsp;</th> -->
 			<th class="product-name"><?php _e('Product', 'woocommerce'); ?></th>
 			<th class="product-price"><?php _e('Price', 'woocommerce'); ?></th>
 <!-- 			<th class="product-quantity"><?php _e('Quantity', 'woocommerce'); ?></th> -->
-			<th class="product-subtotal"><?php _e('Total', 'woocommerce'); ?></th>
+			<!-- <th class="product-subtotal"><?php _e('Total', 'woocommerce'); ?></th> -->
 		</tr>
 	</thead>
 	<tbody>
@@ -36,12 +36,12 @@ global $woocommerce;
 					?>
 					<tr class = "<?php echo esc_attr( apply_filters('woocommerce_cart_table_item_class', 'cart_table_item', $values, $cart_item_key ) ); ?>">
 						<!-- Remove from cart link -->
-						<td class="product-remove">
+<!-- 						<td class="product-remove">
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s"><i class="icon-remove-circle"></i>Remove</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', 'woocommerce') ), $cart_item_key );
 							?>
 						</td>
-
+ -->
 						<!-- The thumbnail -->
 <!-- 						<td class="product-thumbnail">
 							<?php
@@ -56,7 +56,7 @@ global $woocommerce;
 								if ( ! $_product->is_visible() || ( $_product instanceof WC_Product_Variation && ! $_product->parent_is_visible() ) )
 									echo apply_filters( 'woocommerce_in_cart_product_title', $_product->get_title(), $values, $cart_item_key );
 								else
-									printf('<a href="%s">%s</a>', esc_url( get_permalink( apply_filters('woocommerce_in_cart_product_id', $values['product_id'] ) ) ), apply_filters('woocommerce_in_cart_product_title', $_product->get_title(), $values, $cart_item_key ) );
+									printf('%s', apply_filters('woocommerce_in_cart_product_title', $_product->get_title(), $values, $cart_item_key ) );
 
 								// Meta data
 								echo $woocommerce->cart->get_item_data( $values );
@@ -64,6 +64,11 @@ global $woocommerce;
                    				// Backorder notification
                    				if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $values['quantity'] ) )
                    					echo '<p class="backorder_notification">' . __('Available on backorder', 'woocommerce') . '</p>';
+
+                   				// Remove
+                   				echo '<br>';
+                   				echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="seed-remove" title="%s">Remove</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', 'woocommerce') ), $cart_item_key );
+
 							?>
 						</td>
 
@@ -94,11 +99,11 @@ global $woocommerce;
 						</td> -->
 
 						<!-- Product subtotal -->
-						<td class="product-subtotal">
+<!-- 						<td class="product-subtotal">
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_subtotal', $woocommerce->cart->get_product_subtotal( $_product, $values['quantity'] ), $values, $cart_item_key );
 							?>
-						</td>
+						</td> -->
 					</tr>
 					<?php
 				}
