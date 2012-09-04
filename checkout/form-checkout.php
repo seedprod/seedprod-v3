@@ -12,7 +12,7 @@ global $woocommerce; $woocommerce_checkout = $woocommerce->checkout();
 
 <?php $woocommerce->show_messages(); ?>
 
-<?php do_action('woocommerce_before_checkout_form');
+<?php 
 
 // If checkout registration is disabled and not logged in, the user cannot checkout
 if (get_option('woocommerce_enable_signup_and_login_from_checkout')=="no" && get_option('woocommerce_enable_guest_checkout')=="no" && !is_user_logged_in()) :
@@ -20,8 +20,7 @@ if (get_option('woocommerce_enable_signup_and_login_from_checkout')=="no" && get
 	return;
 endif;
 
-// filter hook for include new pages inside the payment method
-$get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce->cart->get_checkout_url() ); ?>
+?>
 	<h3 id="order_review_heading"><?php _e('Your order', 'woocommerce'); ?></h3>
 	<table class="shop_table">
 		<thead>
@@ -239,6 +238,11 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 			?>
 		</tbody>
 	</table>
+<?php
+do_action('woocommerce_before_checkout_form');
+	// filter hook for include new pages inside the payment method
+$get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce->cart->get_checkout_url() ); ?>
+<p>or</p>
 <form name="checkout" method="post" class="checkout" action="<?php echo esc_url( $get_checkout_url ); ?>">
 
 	<?php if ( sizeof( $woocommerce_checkout->checkout_fields ) > 0 ) : ?>

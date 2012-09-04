@@ -1,4 +1,44 @@
 <?php 
+
+// WooCommerce affiliate tracking
+//add_action('woocommerce_thankyou', 'affiliate_tracking');
+
+function affiliate_tracking( $order_id ) {
+	$order = new WC_Order( $order_id );
+	$order_total = $order->get_order_total();
+	$shipping = $order->order_shipping;
+
+	$total = $order_total - $shipping;
+
+	echo "<img src='http://app.seedprod.com/affiliates/sale.php?profile=85&idev_saleamt=$total&idev_ordernum=$order_id' height='1' width='1' border='0'>"; 
+}
+
+// Payment hook
+add_action('woocommerce_payment_complete','app_seedprod_hook');
+function app_seedprod_hook( $order_id ){
+	$order = new WC_Order( $order_id );
+	//var_dump($order);
+}
+
+// Generate API Key and save it to the order/
+add_action('woocommerce_checkout_update_order_meta', 'seedprod_apikey_field_update_order_meta');
+ 
+function seedprod_apikey_field_update_order_meta( $order_id ) {
+    update_post_meta( $order_id, '_api_key', strtolower(wp_generate_password(16)));
+}
+
+// Add API Key to the email.
+
+add_filter('seedprod_apikey_field_order_meta_keys', 'seedprod_apikey_field_order_meta_keys');
+
+function seedprod_apikey_field_order_meta_keys( $keys ) {
+	$keys[] = '_api_key';
+	return $keys;
+}
+
+
+
+
 /**
  * Determines whether or not the user is viewing a date archive.
  *
