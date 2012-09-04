@@ -8895,32 +8895,8 @@ ul#shipping_method .amount {
 /* =Order Page
 -------------------------------------------------------------- */
 .order_details {
-  *zoom: 1;
   margin: 0 0 1.5em;
   list-style: none;
-}
-.order_details:before,
-.order_details:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.order_details:after {
-  clear: both;
-}
-.order_details:before,
-.order_details:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.order_details:after {
-  clear: both;
-}
-.order_details:after {
-  content: "";
-  display: block;
-  clear: both;
 }
 .order_details li {
   float: left;

@@ -48,7 +48,7 @@ $order = new WC_Order( $order_id );
 					<tr class = "' . esc_attr( apply_filters('woocommerce_order_table_item_class', 'order_table_item', $item, $order ) ) . '">
 						<td class="product-name">';
 
-				echo '<a href="'.get_permalink( $item['id'] ).'">' . $item['name'] . '</a>';
+				echo $item['name'];
 
 				$item_meta = new WC_Order_Item_Meta( $item['item_meta'] );
 				$item_meta->display();
