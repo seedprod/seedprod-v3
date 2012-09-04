@@ -1,3 +1,4 @@
+<aside id="sidebar">
 <div class="widget">
 <h3>Keep in Touch</h3>
 	<ul class="unstyled">
@@ -33,3 +34,4 @@
 	</ul>
 	<hr>
 </div>
+</aside>
