@@ -13,100 +13,105 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import 'hellobar-solo/hellobar.less';
 @import 'woocommerce/woocommerce.less';
 
-@linkColor: #F21414;
+@linkColor: #029725;
 
 /* SeedProd Style */ 
  
 /* Global */ 
 body {
-  background: #f5f5f5 url(images/bg/grey.png);
-  font-size:14px;
+  background: #f5f5f5;
 }
 #bd {
-  padding: 20px 0 40px;
+  background: #fff;
+  padding: 40px 0 40px;
 }
 
 .white-well{
-  background: white;
+  background: #f5f5f5;
   margin: 0 0 20px 0;
   padding: 19px;
-  #gradient > .vertical(#fff, hsl(1,92%,99%)  );
+  //#gradient > .vertical(#fff, hsl(1,92%,99%)  );
   .border-radius(4px);
    -webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
   -moz-box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
 
   .box-sizing(border-box);
+}
+
+.hellobar-content .button{
+  text-shadow:none;
 }
 
 /* Widgets */
 
 /* Header */
-#hd{
-  padding-top: 20px;
-  background: #f5f5f5 url(images/bg/noise.png);
+#hd {
+  background-image: none;
+  border-bottom: 1px solid #E6E6E6;
+  background-image: url(images/bg/black_linen.jpg);
+  box-shadow: inset 0px 0px 42px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0px 0px 42px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 0px 150px 15px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: inset 0px 0px 150px 15pxrgba(0, 0, 0, 0.5);
+}
+.home #hd {
+  min-height: 400px;
+  box-shadow: inset 0px 0px 900px 35px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0px 0px 900px 35px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 0px 900px 35px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: inset 0px 0px 900px 35px rgba(0, 0, 0, 0.5);
 }
 
 /* Nav */
-.navbar-inverse .nav > li > a {
-  color:black;
-  text-shadow: 0 -1px 0 #fff;
-  font-weight:bold;
-}
-.navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover {
-  color: @linkColor;
-}
-.navbar .nav {
-  margin-top: 25px;
+.nav{
+  padding-top: 16px;
 }
 .navbar-inverse .navbar-inner{
-  background:none;
+  background: transparent;
   border: none;
   box-shadow: none;
 }
 
 /* Front Page */
-
-.home #bd{
-  padding-top: 0;
-}
-
-.home .white-well{
-  margin:0;
-}
-
-.home .btn-seedprod{
-  font-weight:bold;
-}
-
-#btn-action .thin {
-  font-size: 19px;
-  font-weight: 300;
-}
-
-
 #featured {
   text-align: center;
   background-color: transparent;
   padding: 20px;
-
-  img {
-    margin-top: 30px;
-  }
-  h1, p {
-    color: #000;
-    //text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-  }
+}
+#featured img {
+  margin-top: 30px;
+}
+#featured h1, #featured p {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
 }
 
-
 #fp-features {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 50px;
   img {
     float: left;
     margin: 0 10px 0 0;
   }
+  h2{
+    font-size:23px;
+  }
+}
+
+#featured #btn-action {
+  font-size: 22px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.9);
+  padding: 20px 45px;
+  border: #f5f5f5 2px solid;
+  box-shadow: 0px 0px 15px #222;
+  margin-bottom: -82px;
+}
+
+.hero-unit {
+  margin-bottom:0;
 }
 
 
@@ -258,7 +263,7 @@ body {
   color: #9A9A9A;
   margin-bottom:20px;
   padding-bottom:10px;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .blog .post-meta, .single .post-meta{
@@ -316,14 +321,14 @@ margin-left: 203px;
 /* Footer */
 #ft{
   background: #f5f5f5;
-  border-top: #e6e6e6 1px solid;
+  border-top: #e3e3e3 1px solid;
   color:#8A8A8A;
   text-shadow: white 0 1px 0;
   font-size:12px;
 }
 #footer-wrap {
   margin: 0 auto;
-  padding: 10px 0 10px;
+  padding: 20px 0 10px;
   a {
     color: #8A8A8A;
     text-shadow: white 0 1px 0;

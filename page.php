@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="white-well">
+<div class="well">
 	<?php if ( have_posts() ) { ?>
 		<?php while ( have_posts() ) {
 			 the_post(); ?>

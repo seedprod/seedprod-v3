@@ -47,7 +47,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/seedprod-logo-black.png" alt="SeedProd Logo"></a>
+					<a class="brand" href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/seedprod-logo.png" alt="SeedProd Logo"></a>
 					<div class="nav-collapse collapse">
 						<ul class="nav pull-right">
 							<li><a href="/">Home</a></li>

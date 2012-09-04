@@ -1,16 +1,40 @@
 <?php 
-// if ( get_query_var( 'page' ) > 1) { $paged = get_query_var( 'page' ); } elseif ( get_query_var( 'paged' ) > 1) { $paged = get_query_var( 'paged' ); } else { $paged = 1; } 
+if ( get_query_var( 'page' ) > 1) { $paged = get_query_var( 'page' ); } elseif ( get_query_var( 'paged' ) > 1) { $paged = get_query_var( 'paged' ); } else { $paged = 1; } 
  
-// $query_args = array(
-// 					'post_type' => 'post', 
-// 					'paged' => $paged
-// 				);
-// query_posts( $query_args );
+$query_args = array(
+					'post_type' => 'post', 
+					'paged' => $paged
+				);
+query_posts( $query_args );
  
 ?>
 <?php get_header(); ?>
+<div class="row-fluid">
+	<div class="span9">
+	<?php if ( is_archive() ) { ?>                 
+        <div id="archive-page-title"> 
+            <h3> 
+                <?php _e( 'Archives For ', 'standard' ); ?>
+                <?php if( standard_is_date_archive() ) { ?>
+                	<?php echo standard_get_date_archive_label(); ?>
+            	<?php } elseif ( is_author() ) { ?>
+            		<?php $author_data = get_userdata( get_query_var('author') ); ?>
+                	<?php echo $author_data->display_name; ?>
+                <?php } elseif ( '' == single_tag_title( '', false ) ) { ?> 
+                    <?php echo get_cat_name( get_query_var( 'cat' ) ); ?> 
+                <?php } else { ?> 
+                    <?php echo single_tag_title() ?> 
+                <?php } // end if/else ?> 
+            </h3>
+    <?php if( '' != category_description() ) { ?>
+               <?php echo category_description(); ?>
+            <?php } // end if ?> 
+        </div> 
+    <?php } // end if ?> 
+
+
 	<?php while ( have_posts() ) { ?>
-	<div class="white-well">
+<div class="white-well">
 		<?php the_post(); ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'post format-standard clearfix' ); ?>>
 
@@ -46,7 +70,7 @@
 					<span class="the-time"><?php the_time( get_option( 'date_format' ) ); ?></span>
 				<?php } // end if/else ?>
 				<?php if( comments_open() ) { ?>
-					<span class="the-comment-link">&mdash;&nbsp;<?php comments_popup_link( __( 'Leave a comment', 'standard' ), __( '1 Comment', 'standard' ), __( '% Comments', 'standard' ), '', '' ); ?></span>
+					<span class="the-comment-link">&mdash;&nbsp;<?php comments_popup_link( '<i class="icon-comment"></i>', '1 <i class="icon-comment"></i>','% <i class="icon-comment"></i>', '', '' ); ?></span>
 				<?php } // end if ?>
 			</div><!-- /.post-header-meta -->
 		</div><!-- /.title-wrap -->
@@ -76,7 +100,7 @@
 			
 				<?php $category_list = get_the_category_list( __( ', ', 'standard' ) ); ?>
 				<?php if( $category_list ) { ?>
-					<?php printf( '<span class="the-category">' . __( 'In %1$s', 'standard' ) . '</span>', $category_list ); ?>
+					<?php printf( '<span class="the-category">' . __( '<i class="icon-tag"></i> %1$s', 'standard' ) . '</span>', $category_list ); ?>
 				<?php } // end if ?>
 				
 				<?php $tag_list = get_the_tag_list( '', __( ', ', 'standard' ) ); ?>
@@ -96,10 +120,14 @@
 	</div><!-- /.post-meta -->
 
 </div> <!-- /#post- -->
-</div><!-- .white-well -->
+</div> <!-- .white-well -->
 	<?php } // end while ?>
 
-
-	<?php get_template_part( 'pagination' ); ?>
-	<?php wp_reset_query(); ?> 
+	<?php
+	 get_template_part( 'pagination' ); ?>
+</div>
+<div class="span3">
+<?php get_sidebar(); ?>
+</div>
+</div>
 <?php get_footer(); ?>

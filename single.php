@@ -64,6 +64,9 @@
 				<?php } // end if ?>
 			</div><!-- /#main -->
 		</div>
+		<div class="span3">
+			<?php get_sidebar(); ?>
+		</div>
 
 				
 		</div> <!-- /row -->

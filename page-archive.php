@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="row-fluid">
 	<div class="span9">
-	<div class="white-well">
+	<div class="well">
 
 							
 				<div id="main" class="clearfix" role="main">

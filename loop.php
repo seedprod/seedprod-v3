@@ -1,4 +1,4 @@
-<div class="white-well">
+<div class="well">
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'post format-standard clearfix' ); ?>>
 
 	<div class="post-header clearfix">
