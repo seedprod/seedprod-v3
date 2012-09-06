@@ -17,14 +17,69 @@ function affiliate_tracking( $order_id ) {
 add_action('woocommerce_payment_complete','app_seedprod_hook');
 function app_seedprod_hook( $order_id ){
 	$order = new WC_Order( $order_id );
-	var_dump($order->payment_method);
+	if($order->payment_method == 'strip'){
+		$fname = $order->billing_first_name;
+		$lname =  $order->billing_last_name;
+	}else{
+		$fname = $order->billing_first_name;
+		$lname = $order->billing_last_name;
+		if(empty($fname) && empty($lname)){
+			$fname = 'customer';
+		}
+	}
+    $arg = array (
+	  'first_name' => $fname,
+	  'last_name' => $lname,
+	  'payer_email' => $order->billing_email,
+	  'address_street' => '',
+	  'address_city' => '',
+	  'address_state' => '',
+	  'address_zip' => '',
+	  'address_country_code' => 'US',
+	  'payment_date' => $order->order_date,
+	  'mc_currency' => 'USD',
+	  'mc_gross' => $order->order_total,
+	  'tax' => $order->order_tax,
+	  'txn_type' => $order->payment_method,
+	  'buyer_ip' => $order->order_custom_fields['Customer IP Address'][0],
+	  'card_type' => '',
+	  'txn_id' => $order->id,
+	  'payment_status' => 'Completed',
+	  'quantity' => '1',
+	  'handshake' => '96bfb2f9ee45a9ab0a197eb58d16db26',
+	  'discount_codes' => '',
+	  
+);
+    $c = 1;
+    foreach($order->order_custom_fields['_order_items'] as $k => $v){
+    	$o = unserialize($v);
+    	$arg['item_name'.$c] = $o[0]['name'];
+    	$arg['key_'.$c]=  $order->order_custom_fields['API Key'][0];
+
+    	$c++;
+    }
+    $post = array(
+	'method' => 'POST',
+	'timeout' => 45,
+	'redirection' => 5,
+	'httpversion' => '1.0',
+	'blocking' => true,
+	'headers' => array(),
+	'body' =>$arg,
+	'cookies' => array()
+    );
+	$url = 'http://app.seedprod.com/api/woocommerce/';
+	$response = wp_remote_post( $url, $post );
+
 }
 
 // Generate API Key and save it to the order/
 add_action('woocommerce_checkout_update_order_meta', 'seedprod_apikey_field_update_order_meta');
  
 function seedprod_apikey_field_update_order_meta( $order_id ) {
-    update_post_meta( $order_id, '_api_key', strtolower(wp_generate_password(16,false)));
+	$api_key = strtolower(wp_generate_password(16,false));
+    update_post_meta( $order_id, 'API Key',$api_key );
+    //var_dump($api_key);
 }
 
 // Add API Key to the email.
@@ -32,7 +87,7 @@ function seedprod_apikey_field_update_order_meta( $order_id ) {
 add_filter('seedprod_apikey_field_order_meta_keys', 'seedprod_apikey_field_order_meta_keys');
 
 function seedprod_apikey_field_order_meta_keys( $keys ) {
-	$keys[] = '_api_key';
+	$keys[] = 'API Key';
 	return $keys;
 }
 
