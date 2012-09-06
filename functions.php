@@ -17,14 +17,14 @@ function affiliate_tracking( $order_id ) {
 add_action('woocommerce_payment_complete','app_seedprod_hook');
 function app_seedprod_hook( $order_id ){
 	$order = new WC_Order( $order_id );
-	//var_dump($order);
+	var_dump($order->payment_method);
 }
 
 // Generate API Key and save it to the order/
 add_action('woocommerce_checkout_update_order_meta', 'seedprod_apikey_field_update_order_meta');
  
 function seedprod_apikey_field_update_order_meta( $order_id ) {
-    update_post_meta( $order_id, '_api_key', strtolower(wp_generate_password(16)));
+    update_post_meta( $order_id, '_api_key', strtolower(wp_generate_password(16,false)));
 }
 
 // Add API Key to the email.
