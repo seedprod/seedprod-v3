@@ -224,7 +224,7 @@
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/vcard.png">
 		      <h3>Insights</h3>
 		      <p>
-		        When you capture an email Coming Soon Pro tries to locate a picture and the first and last name of the user, even if you did not ask for one. It also tracks when and where the the user signed up and who that user refers.
+		        When you capture an email Coming Soon Pro tries to locate a picture and the first and last name of the user, even if you did not ask for one. It also tracks when and where the user signed up and who that user refers.
 		      </p>
 		    </div>
 		    
@@ -233,7 +233,7 @@
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/chimpy.png">
 		      <h3>MailChimp Integration</h3>
 		      <p>
-		        Save email subscribers directly to your MailChimp Lists with the ability to caputure the users name. Includes optional Double Opt-In.
+		        Save email subscribers directly to your MailChimp Lists with the ability to capture the users name. Includes optional Double Opt-In.
 		      </p>
 		    </div>
 		    <div class="fl-feature" class="clearfix">
@@ -241,7 +241,7 @@
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aweber-logo.png">
 		      <h3>Aweber Integration</h3>
 		      <p>
-		        Save email subscribers directly to your Aweber Lists with the ability to caputure the users name.
+		        Save email subscribers directly to your Aweber Lists with the ability to capture the users name.
 		      </p>
 		    </div>
 		    <div class="fl-feature" class="clearfix">
@@ -321,7 +321,7 @@
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/smashing-mag.png">
 		      <h3>Custom Footer Branding</h3>
 		      <p>
-		        Display your company's logo on a client site or your own. The logo stay fixed to the bottom right of the page so it's aways visible.
+		        Display your company's logo on a client site or your own. The logo stay fixed to the bottom right of the page so it's always visible.
 		      </p>
 		    </div>
 		    <div class="fl-feature" class="clearfix">
@@ -361,7 +361,7 @@
 		      <img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" style="width:48px">
 		      <h3>HTML5 &amp; CSS3</h3>
 		      <p>
-		        We use modern tools and techniques to create a coming soon page that will look awesome in today's latest browsers and gracefully degradate in yesterday's browsers.
+		        We use modern tools and techniques to create a coming soon page that will look awesome in today's latest browsers and degrade gracefully in yesterday's browsers.
 		      </p>
 		    </div>
 		    <div class="fl-feature" class="clearfix">
