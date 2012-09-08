@@ -44,6 +44,8 @@ if (!defined('ABSPATH')) exit; ?>
 	</tfoot>
 </table>
 
+<p><strong>Your API Key</strong> <?php echo $order->order_custom_fields['API Key'][0]; ?></p>
+
 <?php do_action('woocommerce_email_after_order_table', $order, false); ?>
 
 <h2><?php _e('Customer details', 'woocommerce'); ?></h2>

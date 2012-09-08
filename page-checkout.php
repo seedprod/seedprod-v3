@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row-fluid">
-	<div class="span9">
+	<div class="span10 offset1">
 		<div class="well">
 			<?php if ( have_posts() ) { ?>
 				<?php while ( have_posts() ) {

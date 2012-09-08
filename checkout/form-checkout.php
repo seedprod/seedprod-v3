@@ -242,7 +242,7 @@ endif;
 do_action('woocommerce_before_checkout_form');
 	// filter hook for include new pages inside the payment method
 $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce->cart->get_checkout_url() ); ?>
-<p>or</p>
+<p>or Pay with a Credit Card</p>
 <form name="checkout" method="post" class="checkout" action="<?php echo esc_url( $get_checkout_url ); ?>">
 
 	<?php if ( sizeof( $woocommerce_checkout->checkout_fields ) > 0 ) : ?>

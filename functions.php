@@ -84,11 +84,22 @@ function seedprod_apikey_field_update_order_meta( $order_id ) {
 
 // Add API Key to the email.
 
-add_filter('seedprod_apikey_field_order_meta_keys', 'seedprod_apikey_field_order_meta_keys');
+// add_filter('seedprod_apikey_field_order_meta_keys', 'seedprod_apikey_field_order_meta_keys');
 
-function seedprod_apikey_field_order_meta_keys( $keys ) {
-	$keys[] = 'API Key';
-	return $keys;
+// function seedprod_apikey_field_order_meta_keys( $keys ) {
+// 	$keys[] = 'API Key';
+// 	return $keys;
+// }
+
+//remove Fields
+add_filter( 'woocommerce_checkout_fields' , 'seedprod_remove_checkout_fields' );
+ 
+// Our hooked in function - $fields is passed via the filter!
+function seedprod_remove_checkout_fields( $fields ) {
+	 unset($fields['billing']['billing_company']);
+     unset($fields['billing']['billing_phone']);
+ 
+     return $fields;
 }
 
 

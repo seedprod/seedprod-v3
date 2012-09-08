@@ -82,6 +82,8 @@ $order = new WC_Order( $order_id );
 	</p>
 <?php endif; ?>
 
+<p><strong>Your API Key</strong> <?php echo $order->order_custom_fields['API Key'][0]; ?></p>
+
 <?php do_action( 'woocommerce_order_details_after_order_table', $order ); ?>
 
 <header>
