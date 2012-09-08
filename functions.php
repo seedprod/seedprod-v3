@@ -1,7 +1,7 @@
 <?php 
 
 // WooCommerce affiliate tracking
-//add_action('woocommerce_thankyou', 'affiliate_tracking');
+add_action('woocommerce_thankyou', 'affiliate_tracking');
 
 function affiliate_tracking( $order_id ) {
 	$order = new WC_Order( $order_id );
