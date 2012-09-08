@@ -49,12 +49,16 @@
 					<a class="brand" href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/seedprod-logo.png" alt="SeedProd Logo"></a>
 					<div class="nav-collapse collapse">
 						<ul class="nav pull-right">
+							<?php if(is_page('checkout')): ?>
+							<li><a href="#"  onclick="history.back(-1)">Back to SeedProd</a></li>
+							<?php else: ?>
 							<li><a href="/">Home</a></li>
 							<li><a href="/features/">Features</a></li>
 							<li><a href="/pricing/">Pricing</a></li>
 							<li><a href="/showcase/">Showcase</a></li>
 							<li><a href="/blog/">Blog</a></li>
 							<li><a href="/support/">Support</a></li>
+							<?php endif; ?>
 						</ul>
 					</div><!-- .nav-collapse -->
 				</div>
