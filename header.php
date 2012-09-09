@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<script type="text/javascript">
+		  var _kmq = _kmq || [];
+		  var _kmk = _kmk || 'b7829e2cdf48f17c8445b85ef9d4cf14b0dbc9ea';
+		  function _kms(u){
+		    setTimeout(function(){
+		      var d = document, f = d.getElementsByTagName('script')[0],
+		      s = d.createElement('script');
+		      s.type = 'text/javascript'; s.async = true; s.src = u;
+		      f.parentNode.insertBefore(s, f);
+		    }, 1);
+		  }
+		  _kms('//i.kissmetrics.com/i.js');
+		  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+		</script>
 		<meta charset="utf-8">
 		<title><?php wp_title( '' ); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +33,8 @@
 			<script>
 				var _gaq = _gaq || [];
 				_gaq.push(['_setAccount', 'UA-499993-14']);
+				_gaq.push(['_setDomainName', 'seedprod.com']);
+				_gaq.push(['_setAllowLinker', true]);
 				_gaq.push(['_trackPageview']);
 
 				(function() {

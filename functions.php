@@ -10,7 +10,7 @@ function affiliate_tracking( $order_id ) {
 
 	$total = $order_total - $shipping;
 
-	echo "<img src='http://app.seedprod.com/affiliates/sale.php?profile=85&idev_saleamt=$total&idev_ordernum=$order_id' height='1' width='1' border='0'>"; 
+	echo "<img src='https://app.seedprod.com/affiliates/sale.php?profile=85&idev_saleamt=$total&idev_ordernum=$order_id' height='1' width='1' border='0'>"; 
 }
 
 // Payment hook
