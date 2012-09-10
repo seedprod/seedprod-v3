@@ -70,7 +70,9 @@
 							<?php else: ?>
 							<li><a href="/">Home</a></li>
 							<li><a href="/features/">Features</a></li>
-							<li><a href="/pricing/">Pricing</a></li>
+							<!--<li><a href="/pricing/">Pricing</a></li>-->
+							<li><a href="http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing" onclick="_gaq.push(['_link',
+'http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing']); return false;">Pricing</a></li>
 							<li><a href="/showcase/">Showcase</a></li>
 							<li><a href="/blog/">Blog</a></li>
 							<li><a href="/support/">Support</a></li>
