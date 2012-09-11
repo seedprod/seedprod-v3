@@ -56,6 +56,16 @@
 		 	fonts: 'Arial, Helvetica, sans-serif',
 	    helloBarLogo: false
 		 }, 1.0 );
-</script>
+	</script>
+
+	<!-- Record Kissmetric Events -->
+	<script>
+	<?php if(is_front_page()): ?>
+		_kmq.push(['record', 'Viewed Home']);
+	<?php endif; ?>
+	<?php if(is_page('features')): ?>
+		_kmq.push(['record', 'Viewed Features']);
+	<?php endif; ?>
+	</script>
   </body>
 </html>
