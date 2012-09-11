@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import 'bootstrap/less/bootstrap.less';
 @import 'bootstrap/less/responsive.less';
 @import 'hellobar-solo/hellobar.less';
-@import 'woocommerce/woocommerce.less';
+//@import 'woocommerce/woocommerce.less';
 
 @linkColor: #029725;
 
@@ -325,6 +325,9 @@ margin-left: 203px;
   color:#8A8A8A;
   text-shadow: white 0 1px 0;
   font-size:12px;
+  h5{
+    margin-top:0;
+  }
 }
 #footer-wrap {
   margin: 0 auto;
@@ -334,16 +337,8 @@ margin-left: 203px;
     text-shadow: white 0 1px 0;
   }
   #footer-1{
-    ul li{
-      display:inline;
-      a{
-        padding:5px;
-      }
-    }
-    span{
-      display:block;
-      padding-bottom:2px;
-    }
+
+
     .dlist a{
       color:#b3b3b3;
     }
@@ -353,6 +348,10 @@ margin-left: 203px;
     img{
       margin-top:3px;
       margin-bottom:4px;
+    }
+    span{
+      display:block;
+      margin-top:-5px;
     }
   }
 }
