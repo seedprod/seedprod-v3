@@ -257,8 +257,9 @@ That’s where Coming Soon Pro comes in. "
 		<div class="alert">
 		<div id="footer-goto-features">
 		    <h3>Buy Now and Increase Your Chance Of Launching A Successful WordPress Website</h3>
-		    <a href="http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing" onclick="_gaq.push(['_link',
-'http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing']); return false;" class="btn btn-large btn-seedprod"><i class="icon-shopping-cart icon-white"></i> See Pricing</a>
+		    <a href="/pricing/"  class="btn btn-large btn-seedprod"><i class="icon-shopping-cart icon-white"></i> See Pricing</a>
+		   <!--  <a href="http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing" onclick="_gaq.push(['_link',
+'http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing']); return false;" class="btn btn-large btn-seedprod"><i class="icon-shopping-cart icon-white"></i> See Pricing</a> -->
 		</div>
 		</div>
 
