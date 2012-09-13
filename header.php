@@ -45,9 +45,23 @@
 			</script>
 		<?php } ?>
 
+
 	<?php wp_enqueue_script("jquery"); ?>
 	<!-- wp-head -->
 	<?php wp_head(); ?>
+	
+	<?php if(is_page('pricing')){ ?>
+	<script language="javascript" type="text/javascript">
+			function EJEJC_lc(th) { return false; }
+			function EJEJC_config(){EJEJC_POSTCALL=true;}
+			function EJEJC_shown() {jQuery("#imgHeader").attr("src", "//s3.amazonaws.com/static.seedprod.com/seedprod-logo-157x40.png").css('margin','10px').css('height','40px');
+			jQuery("#tdPmntOptions > table").css('width','auto');
+			jQuery("#ejejctable td").css('border','1px solid #fff').css('padding','3px 5px');
+			jQuery("#ejejctable tr:eq(4) td,#ejejctable table").css('border','none');
+			}
+	</script>
+	<script src='//www.e-junkie.com/ecom/box.js' type='text/javascript'></script>
+	<?php } ?>
 	</head>
 
 	<body <?php body_class(); ?>>
