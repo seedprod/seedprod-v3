@@ -73,7 +73,7 @@
 	<?php if(is_page('features')): ?>
 		_kmq.push(['record', 'Viewed Features']);
 	<?php endif; ?>
-	<?php if(is_page('features')): ?>
+	<?php if(is_page('pricing')): ?>
 		_kmq.push(['record', 'Viewed Pricing']);
 	<?php endif; ?>
 	<?php if(is_page('thank-you')): ?>
