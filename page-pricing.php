@@ -37,7 +37,7 @@
 
 	        <tr id="price-row">
 	          <td>   
-				<a href="https://seedprod.dpdcart.com/cart/add?product_id=45536&method_id=46032" target="ej_ejc" class="ec_ejc_thkbx btn btn-seedprod btn-large" onClick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $50</a>
+				<a href="https://seedprod.dpdcart.com/cart/add?product_id=45536&method_id=46032"  class="btn btn-seedprod btn-large" onclick="this.href = _gat._getTrackerByName()._getLinkerUrl(this.href);"><i class="icon-shopping-cart icon-white"></i> Buy Now $50</a>
 	          </td>
 	    
 	        </tr>
@@ -75,7 +75,7 @@
 
 	        <tr id="price-row">
 	          <td>
-	          	<a href="https://seedprod.dpdcart.com/cart/add?product_id=45538&method_id=46034" target="ej_ejc" class="ec_ejc_thkbx btn btn-seedprod" onClick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $20</a></a>
+	          	<a href="https://seedprod.dpdcart.com/cart/add?product_id=45538&method_id=46034" class=" btn btn-seedprod"><i class="icon-shopping-cart icon-white" onclick="this.href = _gat._getTrackerByName()._getLinkerUrl(this.href);"></i> Buy Now $20</a></a>
 	          </td>
 
 	        </tr>

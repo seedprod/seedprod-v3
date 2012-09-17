@@ -35,6 +35,7 @@
 				_gaq.push(['_setAccount', 'UA-499993-14']);
 				_gaq.push(['_setDomainName', 'seedprod.com']);
 				_gaq.push(['_setAllowLinker', true]);
+				 _gaq.push(['_setAllowHash', false]);
 				_gaq.push(['_trackPageview']);
 
 				(function() {
