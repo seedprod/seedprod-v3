@@ -73,6 +73,9 @@
 	<?php if(is_page('features')): ?>
 		_kmq.push(['record', 'Viewed Features']);
 	<?php endif; ?>
+	<?php if(is_page('features')): ?>
+		_kmq.push(['record', 'Viewed Pricing']);
+	<?php endif; ?>
 	<?php if(is_page('thank-you')): ?>
 		_kmq.push(['record', 'Conversion']);
 		_kmq.push(['record', 'billed', {'Billing Amount':'<?php echo $_GET["gross"] ?>'}]);

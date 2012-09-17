@@ -37,7 +37,7 @@
 
 	        <tr id="price-row">
 	          <td>   
-				<a href="https://www.e-junkie.com/ecom/gb.php?c=cart&i=1086084&cl=187765&ejc=2&amount=3" target="ej_ejc" class="ec_ejc_thkbx btn btn-seedprod btn-large" onClick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $50</a>
+				<a href="https://seedprod.dpdcart.com/cart/add?product_id=45536&method_id=46032" target="ej_ejc" class="ec_ejc_thkbx btn btn-seedprod btn-large" onClick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $50</a>
 	          </td>
 	    
 	        </tr>
@@ -75,7 +75,7 @@
 
 	        <tr id="price-row">
 	          <td>
-	          	<a href="https://www.e-junkie.com/ecom/gb.php?c=cart&i=1067548&cl=187765&ejc=2&amount=1" target="ej_ejc" class="ec_ejc_thkbx btn btn-seedprod" onClick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $20</a></a>
+	          	<a href="https://seedprod.dpdcart.com/cart/add?product_id=45538&method_id=46034" target="ej_ejc" class="ec_ejc_thkbx btn btn-seedprod" onClick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $20</a></a>
 	          </td>
 
 	        </tr>
