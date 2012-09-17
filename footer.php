@@ -66,6 +66,7 @@
 	</script>
 
 	<!-- Record Kissmetric Events -->
+	<?php if(!is_user_logged_in()) { ?>
 	<script>
 	<?php if(is_front_page()): ?>
 		_kmq.push(['record', 'Viewed Home']);
@@ -81,5 +82,6 @@
 		_kmq.push(['record', 'billed', {'Billing Amount':'<?php echo $_GET["gross"] ?>'}]);
 	 <?php endif; ?>
 	</script>
+	<?php } ?>
   </body>
 </html>

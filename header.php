@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<?php if(!is_user_logged_in()) { ?>
 		<script type="text/javascript">
 		  var _kmq = _kmq || [];
 		  var _kmk = _kmk || '63828df3d2d2aeba257d2f7de26f8aa14dbe43e1';
@@ -15,6 +16,7 @@
 		  _kms('//i.kissmetrics.com/i.js');
 		  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 		</script>
+		<?php } ?>
 		<meta charset="utf-8">
 		<title><?php wp_title( '' ); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
