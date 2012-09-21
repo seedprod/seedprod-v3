@@ -76,6 +76,14 @@
 	<?php endif; ?>
 	<?php if(is_page('pricing')): ?>
 		_kmq.push(['record', 'Viewed Pricing']);
+		jQuery(document).ready(function($) {
+			$("#csp-dev").click(function() {
+				_kmq.push(['record', 'added to cart',{'product category':'plugin', 'product name':'Coming Soon Pro Developer Lifetime License'}]);
+			});			
+			$("#csp-per").click(function() {
+				_kmq.push(['record', 'added to cart',{'product category':'plugin', 'product name':'Coming Soon Pro Personal License'}]);
+			});
+		});
 	<?php endif; ?>
 	<?php if(is_page('thank-you')): ?>
 		_kmq.push(['record', 'Conversion']);
