@@ -32,6 +32,7 @@
 
 		<!-- GA -->
 		<?php if(!is_user_logged_in()) { ?>
+		<?php if(!is_page('thank-you')) { ?>
 			<script>
 				var _gaq = _gaq || [];
 				_gaq.push(['_setAccount', 'UA-499993-14']);
@@ -46,6 +47,7 @@
 					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 				})();
 			</script>
+		<?php } ?>
 		<?php } ?>
 
 
@@ -79,11 +81,11 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/seedprod-logo.png" alt="SeedProd Logo"></a>
+					<a class="brand" href="http://www.seedprod.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/seedprod-logo.png" alt="SeedProd Logo"></a>
 					<div class="nav-collapse collapse">
 						<ul class="nav pull-right">
-							<?php if(is_page('checkout')): ?>
-							<li><a href="#"  onclick="history.back(-1)">Back to SeedProd</a></li>
+							<?php if(is_page('thank-you')): ?>
+							<li><a href="http://www.seedprod.com" >Back to SeedProd</a></li>
 							<?php else: ?>
 							<li><a href="/">Home</a></li>
 							<li><a href="/features/">Features</a></li>

@@ -6,25 +6,29 @@
 		    <div id="footer-wrap">
 				<div class="row-fluid">
 					<div class="span2">
-						<h5>SeedProd</h5>
 						<div id="footer-1">
+						<?php if(!is_page('thank-you')): ?>
+							<h5>SeedProd</h5>
 							<ul class="unstyled">
 								<li><a href="/about/" style="padding-left:0">About</a></li>
 								<li><a href="/contact/">Contact</a></li>
 								<li><a href="/testimonials/">Testimonials</a></li>
 								<li><a href="/affiliates/">Affiliates</a></li>
 								<li><a href="/press-kit/">Press Kit</a></li>
-							</ul>							
+							</ul>
+						<?php endif; ?>						
 						</div>
 					</div>
 					<div class="span2">
 						<div id="footer-2">
+						<?php if(!is_page('thank-you')): ?>
 							<h5>Policies</h5>
 							<ul class="unstyled">
 								<li class="dlist"><a href="/terms/">Terms &amp; Conditions</a></li>
 								<li class="dlist"><a href="/refunds/">Refund Policy</a></li>
 								<li class="dlist"><a href="/privacy/">Privacy Policy</a></li>
-							</ul>							
+							</ul>	
+						<?php endif; ?>							
 						</div>
 					</div>
 					<div class="span8">
@@ -45,6 +49,7 @@
     </footer><!-- #ft -->
 
     </div><!-- #pg -->
+    <?php if(!is_page('thank-you')): ?>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/bootstrap/js/bootstrap.min.js"></script>
     <?php wp_footer(); ?>
     <!-- begin olark code --><script cf-async="false" data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
@@ -64,8 +69,24 @@
 	    helloBarLogo: false
 		 }, 1.0 );
 	</script>
+	<?php endif; ?>
 
 	<!-- Record Kissmetric Events -->
+	<?php 
+	// Check to see if we have already processed this order
+	global $wpdb;
+    $tablename = $wpdb->prefix . "seedprod_processed";
+    $transaction_id = $_GET['txn_id'];
+	$sql = "SELECT transaction_id FROM $tablename WHERE transaction_id = %s";
+    $safe_sql = $wpdb->prepare($sql,$transaction_id);
+    $q = $wpdb->get_var($safe_sql);
+
+    $tablename = $wpdb->prefix . "seedprod_orders";
+	$sql = "SELECT `order` FROM $tablename WHERE transaction_id = %s";
+    $safe_sql = $wpdb->prepare($sql,$transaction_id);
+    $order = $wpdb->get_var($safe_sql);
+
+	?>
 	<?php if(!is_user_logged_in()) { ?>
 	<script>
 	<?php if(is_front_page()): ?>
@@ -85,10 +106,69 @@
 			});
 		});
 	<?php endif; ?>
-	<?php if(is_page('thank-you')): ?>
+	<?php 
+	//if(is_page('thank-you') && !empty($_GET["gross"]) && $_GET["gross"] != '0.00' && is_null($q)): 
+	if(is_page('thank-you') && !empty($_GET["gross"]) && is_null($q)): 
+	?>
 		_kmq.push(['record', 'Conversion']);
 		_kmq.push(['record', 'billed', {'Billing Amount':'<?php echo $_GET["gross"] ?>'}]);
-	 <?php endif; ?>
+
+		// Record Transaction
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-499993-14']);
+		  _gaq.push(['_setDomainName', 'seedprod.com']);
+		  _gaq.push(['_trackPageview']);
+		  _gaq.push(['_addTrans',
+		    '<?php echo $_GET['txn_id']; ?>',           // order ID - required
+		    'SeedProd',  // affiliation or store name
+		    '<?php echo $_GET['gross']; ?>'         // total - required
+		  ]);
+
+		   // add item might be called for every item in the shopping cart
+		   // where your ecommerce engine loops through each item in the cart and
+		   // prints out _addItem for each
+		  <?php
+		  if(!empty($order)){
+		  $order = unserialize($order);
+		  for ($i = 1; $i <= 50; $i++) {
+		  	if (isset($order['item_name' . $i])) {
+		  ?>
+		  _gaq.push(['_addItem',
+		    '<?php echo $_GET['txn_id']; ?>',           // order ID - required
+		    '<?php echo $order['item_number' . $i]; ?>',           // SKU/code - required
+		    '<?php echo $order['item_name' . $i]; ?>',        // product name
+		    '<?php echo $order['mc_gross_' . $i]; ?>',          // unit price - required
+		    '<?php echo $order['quantity' . $i]; ?>'               // quantity - required
+		  ]);
+		  <?php
+		  }}}
+		  ?>
+		  _gaq.push(['_trackTrans']); //submits transaction to the Analytics servers
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		<?php 
+		// Process the order
+		global $wpdb;
+	    $tablename = $wpdb->prefix . "seedprod_processed";
+	    $transaction_id = $_GET['txn_id'];
+        $values = array(
+            'transaction_id' => $transaction_id
+
+        );
+        $format_values = array(
+            '%s'
+        );
+	    $insert_result = $wpdb->insert(
+                            $tablename,
+                            $values,
+                            $format_values
+                        );
+		?>
+		<?php endif; ?>
 	</script>
 	<?php } ?>
   </body>
