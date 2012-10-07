@@ -107,8 +107,8 @@
 		});
 	<?php endif; ?>
 	<?php 
-	//if(is_page('thank-you') && !empty($_GET["gross"]) && $_GET["gross"] != '0.00' && is_null($q)): 
-	if(is_page('thank-you') && !empty($_GET["gross"]) && is_null($q)): 
+	if(is_page('thank-you') && !empty($_GET["gross"]) && $_GET["gross"] != '0.00' && is_null($q)): 
+	//if(is_page('thank-you') && !empty($_GET["gross"]) && is_null($q)): 
 	?>
 		_kmq.push(['record', 'Conversion']);
 		_kmq.push(['record', 'billed', {'Billing Amount':'<?php echo $_GET["gross"] ?>'}]);
