@@ -14,3 +14,4 @@ echo '<iframe src="https://www.e-junkie.com/ecom/rp.php?noredirect=true&client_i
 
 
 
+<?php get_footer(); ?>
