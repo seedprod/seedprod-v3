@@ -12,7 +12,7 @@
 		        <a target="_blank" href="http://demo.seedprod.com/coming-soon-pro/" class="btn btn-seedprod"><i class="icon-eye-open icon-white"></i> Coming Soon Demo</a>
 		        <a target="_blank" href="http://demo.seedprod.com/" class="btn btn-seedprod" target="_blank"><i class="icon-asterisk icon-white"></i> Try Before You Buy</a> 
 
-		        <a target="_blank" href="/pricing/" class="btn btn-seedprod"><i class="icon-shopping-cart icon-white"></i> Buy Now</a> 
+		        <a href="/pricing/" class="btn btn-seedprod"><i class="icon-shopping-cart icon-white"></i> Buy Now</a> 
 		        <!-- <a href="http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing" onclick="_gaq.push(['_link',
 'http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing']); return false;" class="btn btn-seedprod"><i class="icon-shopping-cart icon-white"></i> Buy Now</a> --> 
 		    </div>

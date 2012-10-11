@@ -1,7 +1,7 @@
 /*  
 Theme Name: SeedProd
 Theme URI: http://www.seedprod.com
-Version: 2.0.0
+Version: 3.0.0
 Description: I'm on a boat!
 Author: SeedProd
 Author URI: http://www.seedprod.com
@@ -11,6 +11,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import 'bootstrap/less/bootstrap.less';
 @import 'bootstrap/less/responsive.less';
 @import 'hellobar-solo/hellobar.less';
+@import 'pricing-style/main.css';
+@import 'pricing-style/style_6.css';
 //@import 'woocommerce/woocommerce.less';
 
 @linkColor: #029725;
@@ -201,56 +203,25 @@ body {
 }
 
 /* Pricing Page */
-#pricing > div > table {
-  width: 90%;
-  margin: 0 auto;
-}
-#pricing > div > table th, #pricing > div > table td {
-  text-align: center;
-}
-#pricing > div > table th {
-  color: #fff;
-  #gradient > .vertical(@linkColor ,darken(@linkColor,20%));
+#pricing-plans,#pricing-testimonials,#pricing-faqs{
+  margin-bottom:60px
 }
 
-#pricing table th {
-  vertical-align: top;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-}
-#pricing table td.feat a,
-#pricing table td.feat a:visited,
-#pricing table td.feat a:hover,
-#pricing table td.feat a:active {
-  color: #444;
-  text-decoration: none;
-  border-bottom: 1px dotted #999;
-  cursor: help;
-}
-#pricing table td {
-  vertical-align: middle;
-  font-weight: bold;
-}
-#price-row td {
-  padding: 15px 0;
+#pricing-plans{
+  h1{
+    text-align:center;
+    margin-bottom:0px;
+  }
+  h3{
+    text-align:center;
+    margin:0 0 30px;
+    color:#555;
+  }
 }
 
-.product-testimonial blockquote {
-  padding: 0;
-  margin: 0 0 18px;
-  border-left: none;
-  font-family: Georgia,serif;
-  font-style: italic;
-  font-size: 16px;
-}
-
-.price {
-  font-size: 30px;
-  margin: 5px;
-  display: block;
-}
-
-#faqs{
-  margin-bottom:20px;
+#pricing-faqs h3{
+  line-height: 28px;
+  color:#555;
 }
 
 /* Blog */
@@ -371,37 +342,37 @@ margin-left: 203px;
 
 /* WooCommerce */
 
-.shop_table{
-  background:#fff;
-}
-
-.cart_totals  table{
-  float:right;
-  background:#fff;
-  border: 1px solid #E3E3E3;
-}
-
-.cart td.product-name {
-  font-size:22px;
-}
-
-.seed-remove{
-  font-size:11px;
-  color:#550000;
-
-}
-.seed-remove:hover{
-    color:#550000;
-}
-
-.col2-set .col-1 {
-float: none;
-width: 98%;
-}
-
-.col2-set .col-2 {
-display:none;
-}
+//.shop_table{
+//  background:#fff;
+//}
+//
+//.cart_totals  table{
+//  float:right;
+//  background:#fff;
+//  border: 1px solid #E3E3E3;
+//}
+//
+//.cart td.product-name {
+//  font-size:22px;
+//}
+//
+//.seed-remove{
+//  font-size:11px;
+//  color:#550000;
+//
+//}
+//.seed-remove:hover{
+//    color:#550000;
+//}
+//
+//.col2-set .col-1 {
+//float: none;
+//width: 98%;
+//}
+//
+//.col2-set .col-2 {
+//display:none;
+//}
 
 /* WordPress Core */
 .alignnone {
