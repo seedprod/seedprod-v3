@@ -49,7 +49,7 @@
     </footer><!-- #ft -->
 
     </div><!-- #pg -->
-    <?php if(!is_page('thank-you')): ?>
+    <?php if(!is_page('thank-you')){ ?>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/bootstrap/js/bootstrap.min.js"></script>
     <?php wp_footer(); ?>
     <!-- begin olark code --><script cf-async="false" data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
@@ -69,23 +69,24 @@
 	    helloBarLogo: false
 		 }, 1.0 );
 	</script>
-	<?php endif; ?>
+	<?php } ?>
 
 	<!-- Record Kissmetric Events -->
 	<?php 
 	// Check to see if we have already processed this order
-	global $wpdb;
-    $tablename = $wpdb->prefix . "seedprod_processed";
-    $transaction_id = $_GET['txn_id'];
-	$sql = "SELECT transaction_id FROM $tablename WHERE transaction_id = %s";
-    $safe_sql = $wpdb->prepare($sql,$transaction_id);
-    $q = $wpdb->get_var($safe_sql);
+	if(is_page('thank-you'){
+		global $wpdb;
+	    $tablename = $wpdb->prefix . "seedprod_processed";
+	    $transaction_id = $_GET['txn_id'];
+		$sql = "SELECT transaction_id FROM $tablename WHERE transaction_id = %s";
+	    $safe_sql = $wpdb->prepare($sql,$transaction_id);
+	    $q = $wpdb->get_var($safe_sql);
 
-    $tablename = $wpdb->prefix . "seedprod_orders";
-	$sql = "SELECT `order` FROM $tablename WHERE transaction_id = %s";
-    $safe_sql = $wpdb->prepare($sql,$transaction_id);
-    $order = $wpdb->get_var($safe_sql);
-
+	    $tablename = $wpdb->prefix . "seedprod_orders";
+		$sql = "SELECT `order` FROM $tablename WHERE transaction_id = %s";
+	    $safe_sql = $wpdb->prepare($sql,$transaction_id);
+	    $order = $wpdb->get_var($safe_sql);
+	}
 	?>
 	<?php if(!is_user_logged_in()) { ?>
 	<script>
@@ -107,7 +108,7 @@
 		});
 	<?php endif; ?>
 	<?php 
-	if(is_page('thank-you') && !empty($_GET["gross"]) && $_GET["gross"] != '0.00' && is_null($q)): 
+	if(is_page('thank-you') && !empty($_GET["gross"]) && $_GET["gross"] != '0.00' && is_null($q)){ 
 	//if(is_page('thank-you') && !empty($_GET["gross"]) && is_null($q)): 
 	?>
 		_kmq.push(['record', 'Conversion']);
@@ -121,7 +122,12 @@
 		  _gaq.push(['_addTrans',
 		    '<?php echo $_GET['txn_id']; ?>',           // order ID - required
 		    'SeedProd',  // affiliation or store name
-		    '<?php echo $_GET['gross']; ?>'         // total - required
+		    '<?php echo $_GET['gross']; ?>' ,        // total - required
+		    '',
+		    '',
+		    '',
+		    '',
+		    '<?php echo $_GET['residence_country']; ?>'
 		  ]);
 
 		   // add item might be called for every item in the shopping cart
@@ -137,13 +143,17 @@
 		    '<?php echo $_GET['txn_id']; ?>',           // order ID - required
 		    '<?php echo $order['item_number' . $i]; ?>',           // SKU/code - required
 		    '<?php echo $order['item_name' . $i]; ?>',        // product name
+		    '',
 		    '<?php echo $order['mc_gross_' . $i]; ?>',          // unit price - required
 		    '<?php echo $order['quantity' . $i]; ?>'               // quantity - required
 		  ]);
 		  <?php
 		  }}}
 		  ?>
+
+		  <?php if(!empty($order)){ ?>
 		  _gaq.push(['_trackTrans']); //submits transaction to the Analytics servers
+		  <?php } ?>
 
 		  (function() {
 		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -168,7 +178,7 @@
                             $format_values
                         );
 		?>
-		<?php endif; ?>
+		<?php } ?>
 	</script>
 	<?php } ?>
   </body>
