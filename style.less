@@ -15,11 +15,21 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import 'pricing-style/style_6.css';
 //@import 'woocommerce/woocommerce.less';
 
-@linkColor: #029725;
+@linkColor:  #FFD34E;
 
 /* SeedProd Style */ 
+
+/* Fonts */
+h1,h2,h3,h4,h5,h6 {
+  font-family:  'Yanone Kaffeesatz', sans-serif;
+  //font-family: 'Rancho', cursive;
+  //font-family: 'Bree Serif', Georgia, serif;
+
+}
+
  
-/* Global */ 
+/* Global */
+
 body {
   background: #f5f5f5;
 }
@@ -34,11 +44,21 @@ body {
   padding: 19px;
   //#gradient > .vertical(#fff, hsl(1,92%,99%)  );
   .border-radius(4px);
-   -webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+   -webkit-box-shadow: ;
   -moz-box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
 
   .box-sizing(border-box);
+}
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: whiteSmoke;
+  border: 1px solid #E3E3E3;
+  .border-radius(0);
+  .box-shadow(none);
 }
 
 #hellobar-content .button{
@@ -59,20 +79,26 @@ body {
   background-image: none;
   border-bottom: 1px solid #E6E6E6;
   background-image: url(images/bg/black_linen.jpg);
-  box-shadow: inset 0px 0px 42px 4px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 0px 0px 42px 4px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0px 0px 150px 15px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: inset 0px 0px 150px 15pxrgba(0, 0, 0, 0.5);
+  //background-image: url(images/bg/whitey.png);
+  .box-shadow(inset 0px 0px 42px 4px rgba(0, 0, 0, 0.5));
 }
 .home #hd {
   min-height: 400px;
-  box-shadow: inset 0px 0px 900px 35px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 0px 0px 900px 35px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0px 0px 900px 35px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: inset 0px 0px 900px 35px rgba(0, 0, 0, 0.5);
+  .box-shadow(inset 0px 0px 900px 35px rgba(0, 0, 0, 0.6));
 }
 
 /* Nav */
+.navbar-inverse .nav > li > a {
+  color:hsl(0,0,100%);
+  //text-shadow: 0 -1px 0 #fff;
+  font-weight:bold;
+}
+.navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover {
+  color: @linkColor;
+}
+.navbar{
+  background-color: hsla(0,0%,100%,0.1);
+}
 .nav{
   padding-top: 16px;
 }
@@ -93,7 +119,7 @@ body {
 }
 #featured h1, #featured p {
   color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+  text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.75);
 }
 
 #fp-features {
@@ -306,7 +332,8 @@ margin-left: 203px;
 #ft{
   background: #f5f5f5;
   border-top: #e3e3e3 1px solid;
-  color:#8A8A8A;
+  //background-image: url(images/bg/black_linen.jpg);
+  color:hsl(0,0,30%);
   text-shadow: white 0 1px 0;
   font-size:12px;
   h5{
@@ -442,249 +469,4 @@ a img.aligncenter {
   margin: 0;
   padding: 0 4px 5px;
 }
-
-/* Prettify */
-pre {
-  background-color: transparent;
-}
-.highlight .hll {
-  background-color: #49483e;
-}
-.highlight {
-  background: #272822;
-  color: #f8f8f2;
-}
-.highlight .c {
-  color: #75715e;
-}
-/* Comment */
-.highlight .err {
-  color: #960050;
-  background-color: #1e0010;
-}
-/* Error */
-.highlight .k {
-  color: #66d9ef;
-}
-/* Keyword */
-.highlight .l {
-  color: #ae81ff;
-}
-/* Literal */
-.highlight .n {
-  color: #f8f8f2;
-}
-/* Name */
-.highlight .o {
-  color: #f92672;
-}
-/* Operator */
-.highlight .p {
-  color: #f8f8f2;
-}
-/* Punctuation */
-.highlight .cm {
-  color: #75715e;
-}
-/* Comment.Multiline */
-.highlight .cp {
-  color: #75715e;
-}
-/* Comment.Preproc */
-.highlight .c1 {
-  color: #75715e;
-}
-/* Comment.Single */
-.highlight .cs {
-  color: #75715e;
-}
-/* Comment.Special */
-.highlight .ge {
-  font-style: italic;
-}
-/* Generic.Emph */
-.highlight .gs {
-  font-weight: bold;
-}
-/* Generic.Strong */
-.highlight .kc {
-  color: #66d9ef;
-}
-/* Keyword.Constant */
-.highlight .kd {
-  color: #66d9ef;
-}
-/* Keyword.Declaration */
-.highlight .kn {
-  color: #f92672;
-}
-/* Keyword.Namespace */
-.highlight .kp {
-  color: #66d9ef;
-}
-/* Keyword.Pseudo */
-.highlight .kr {
-  color: #66d9ef;
-}
-/* Keyword.Reserved */
-.highlight .kt {
-  color: #66d9ef;
-}
-/* Keyword.Type */
-.highlight .ld {
-  color: #e6db74;
-}
-/* Literal.Date */
-.highlight .m {
-  color: #ae81ff;
-}
-/* Literal.Number */
-.highlight .s {
-  color: #e6db74;
-}
-/* Literal.String */
-.highlight .na {
-  color: #a6e22e;
-}
-/* Name.Attribute */
-.highlight .nb {
-  color: #f8f8f2;
-}
-/* Name.Builtin */
-.highlight .nc {
-  color: #a6e22e;
-}
-/* Name.Class */
-.highlight .no {
-  color: #66d9ef;
-}
-/* Name.Constant */
-.highlight .nd {
-  color: #a6e22e;
-}
-/* Name.Decorator */
-.highlight .ni {
-  color: #f8f8f2;
-}
-/* Name.Entity */
-.highlight .ne {
-  color: #a6e22e;
-}
-/* Name.Exception */
-.highlight .nf {
-  color: #a6e22e;
-}
-/* Name.Function */
-.highlight .nl {
-  color: #f8f8f2;
-}
-/* Name.Label */
-.highlight .nn {
-  color: #f8f8f2;
-}
-/* Name.Namespace */
-.highlight .nx {
-  color: #a6e22e;
-}
-/* Name.Other */
-.highlight .py {
-  color: #f8f8f2;
-}
-/* Name.Property */
-.highlight .nt {
-  color: #f92672;
-}
-/* Name.Tag */
-.highlight .nv {
-  color: #f8f8f2;
-}
-/* Name.Variable */
-.highlight .ow {
-  color: #f92672;
-}
-/* Operator.Word */
-.highlight .w {
-  color: #f8f8f2;
-}
-/* Text.Whitespace */
-.highlight .mf {
-  color: #ae81ff;
-}
-/* Literal.Number.Float */
-.highlight .mh {
-  color: #ae81ff;
-}
-/* Literal.Number.Hex */
-.highlight .mi {
-  color: #ae81ff;
-}
-/* Literal.Number.Integer */
-.highlight .mo {
-  color: #ae81ff;
-}
-/* Literal.Number.Oct */
-.highlight .sb {
-  color: #e6db74;
-}
-/* Literal.String.Backtick */
-.highlight .sc {
-  color: #e6db74;
-}
-/* Literal.String.Char */
-.highlight .sd {
-  color: #e6db74;
-}
-/* Literal.String.Doc */
-.highlight .s2 {
-  color: #e6db74;
-}
-/* Literal.String.Double */
-.highlight .se {
-  color: #ae81ff;
-}
-/* Literal.String.Escape */
-.highlight .sh {
-  color: #e6db74;
-}
-/* Literal.String.Heredoc */
-.highlight .si {
-  color: #e6db74;
-}
-/* Literal.String.Interpol */
-.highlight .sx {
-  color: #e6db74;
-}
-/* Literal.String.Other */
-.highlight .sr {
-  color: #e6db74;
-}
-/* Literal.String.Regex */
-.highlight .s1 {
-  color: #e6db74;
-}
-/* Literal.String.Single */
-.highlight .ss {
-  color: #e6db74;
-}
-/* Literal.String.Symbol */
-.highlight .bp {
-  color: #f8f8f2;
-}
-/* Name.Builtin.Pseudo */
-.highlight .vc {
-  color: #f8f8f2;
-}
-/* Name.Variable.Class */
-.highlight .vg {
-  color: #f8f8f2;
-}
-/* Name.Variable.Global */
-.highlight .vi {
-  color: #f8f8f2;
-}
-/* Name.Variable.Instance */
-.highlight .il {
-  color: #ae81ff;
-}
-/* Literal.Number.Integer.Long */
 

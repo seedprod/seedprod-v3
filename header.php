@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<?php if(!is_user_logged_in()) { ?>
+		<?php 
+		// Load Kissmetric if the user is not logged in
+		if(!is_user_logged_in()) { ?>
 		<script type="text/javascript">
 		  var _kmq = _kmq || [];
 		  var _kmk = _kmk || '63828df3d2d2aeba257d2f7de26f8aa14dbe43e1';
@@ -24,14 +26,23 @@
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
 		<!-- Styles -->
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+
+
+
 		<link type="text/css" rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
-		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
 		<!-- GA -->
-		<?php if(!is_user_logged_in()) { ?>
+		<?php 
+		// Load Google Ananlytics if user is not logged in and not Thank You page
+		if(!is_user_logged_in()) { ?>
 		<?php if(!is_page('thank-you')) { ?>
 			<script>
 				var _gaq = _gaq || [];
@@ -51,11 +62,13 @@
 		<?php } ?>
 
 
+	<!-- load jQuery & wp-head -->
 	<?php wp_enqueue_script("jquery"); ?>
-	<!-- wp-head -->
 	<?php wp_head(); ?>
 	
-	<?php if(is_page('pricing')){ ?>
+	<?php 
+	// Load eJunkie code if is the Pricing page
+	if(is_page('pricing')){ ?>
 	<script language="javascript" type="text/javascript">
 			function EJEJC_lc(th) { return false; }
 			function EJEJC_config(){EJEJC_POSTCALL=true;}
@@ -81,7 +94,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="http://www.seedprod.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/seedprod-logo.png" alt="SeedProd Logo"></a>
+					<a class="brand" href="http://www.seedprod.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/seedprod-logo-white.png" alt="SeedProd Logo"></a>
 					<div class="nav-collapse collapse">
 						<ul class="nav pull-right">
 							<?php if(is_page('thank-you')): ?>
@@ -108,6 +121,8 @@
 		}
 		?>
 	</div> <!-- /#hb -->
+	<div class="well">
+	</div>
 
 
 		<div id="bd">
