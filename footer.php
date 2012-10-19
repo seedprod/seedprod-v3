@@ -14,7 +14,7 @@
 								<li><a href="/contact/">Contact</a></li>
 								<li><a href="/testimonials/">Testimonials</a></li>
 								<li><a href="/affiliates/">Affiliates</a></li>
-								<li><a href="/press-kit/">Press Kit</a></li>
+								
 							</ul>
 						<?php endif; ?>						
 						</div>
@@ -22,11 +22,12 @@
 					<div class="span2">
 						<div id="footer-2">
 						<?php if(!is_page('thank-you')): ?>
-							<h5>Policies</h5>
+							
 							<ul class="unstyled">
 								<li class="dlist"><a href="/terms/">Terms &amp; Conditions</a></li>
 								<li class="dlist"><a href="/refunds/">Refund Policy</a></li>
 								<li class="dlist"><a href="/privacy/">Privacy Policy</a></li>
+								<li><a href="/press-kit/">Press Kit</a></li>
 							</ul>	
 						<?php endif; ?>							
 						</div>
@@ -34,15 +35,10 @@
 					<div class="span8">
 						<div id="footer-3">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-footer.png">
-							<p>
-								Copyright &copy; <?php echo date('Y') ?> SeedProd
-							</p>
-							<a href="https://twitter.com/seedprod" class="twitter-follow-button" data-show-count="false">Follow @seedprod</a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 							<span>
-								<a href="http://twitter.com/seedprod"><img id="twitter-icon" style="padding-right:3px" src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-twitter.png"></a>
-								<a href="http://feeds.feedburner.com/seedprod"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-feed.png"></a>
+								Copyright &copy; <?php echo date('Y') ?> SeedProd
 							</span>
+							<a href="https://twitter.com/seedprod" class="twitter-follow-button" data-show-count="false">Follow @seedprod</a>
 						</div>
 					</div>
 				</div>
@@ -51,11 +47,15 @@
     </footer><!-- #ft -->
 
     </div><!-- #pg -->
-    <?php 
+    
+
+    <?php wp_footer(); ?>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<?php 
     // Do not show Olark or HelloBar on the Thanks You page
     if(!is_page('thank-you')){ ?>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/bootstrap/js/bootstrap.min.js"></script>
-    <?php wp_footer(); ?>
 	<!-- begin olark code -->
 	<script cf-async="false" data-cfasync="false" type='text/javascript'>
 		/*{literal}<![CDATA[*/

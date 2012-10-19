@@ -12,63 +12,21 @@
 			<div class="p_table">
 				<div class="frame_border radius5">
 				
-					<!-- caption column -->
-					<div class="caption_column">
-						<ul>
-							<!-- column header -->
-							<li class="header_row_1 align_center"></li>
-							<li class="decor_line"></li>
-							<li class="header_row_2"><h1 class="caption">Licenses</span></h1></li>
-							<!-- data rows -->
-							<li class="row_style_1"><span>Data Storage</span></li>
-							<li class="row_style_3"><span>Monthly Traffic</span></li>
-							<li class="row_style_1"><span>Email Accounts</span></li>
-							<li class="row_style_3"><span>MySQL Databases</span></li>
-							<li class="row_style_1"><span>Daily Backup</span></li>
-							<li class="row_style_3"><span>Free Domain</span></li>
-							<li class="row_style_1"><span>Website Statistics</span></li>
-							<li class="row_style_3"><span>Online Support</span></li>
-							<!-- column footer -->
-							<li class="footer_row"></li>
-						</ul>
-					</div>
+
 				
-					<!-- column style 1 -->
-					<div class="column_1">
-					<!-- ribbon (optional) -->
-					<!--<div class="column_ribbon ribbon_style1_off5"></div>-->
-					<!-- /ribbon -->
-					
-						<ul>
-							<!-- column header -->
-							<li class="header_row_1 align_center radius5_topleft"><h2>Personal</h2></li>
-							<li class="decor_line"></li>
-							<li class="header_row_2 align_center radius5_bottomleft"><h1>$29</h1><h3>per month</h3></li>
-							<!-- data rows -->
-							<li class="row_style_1 align_center"><span>2GB Disk Space</span></li>
-							<li class="row_style_2 align_center"><span>10GB Bandwidth</span></li>
-							<li class="row_style_1 align_center"><span>5 Accounts</span></li>
-							<li class="row_style_2 align_center"><span>2 Databases</span></li>
-							<li class="row_style_1 align_center"><span>Yes</span></li>
-							<li class="row_style_2 align_center"><span>No</span></li>
-							<li class="row_style_1 align_center"><span>No</span></li>
-							<li class="row_style_2 align_center"><span>No</span></li>
-							<!-- column footer -->
-							<li class="footer_row"><a href="" class="button_1 radius5">sign up</a></li>
-						</ul>
-					</div>
+
 				
 					<!-- column style 2 -->
 					<div class="column_2">
 					<!-- ribbon (optional) -->
-					<div class="column_ribbon ribbon_style1_best"></div>
+					<div class="column_ribbon ribbon_style1_best "></div>
 					<!-- /ribbon -->
 					
 						<ul>
 							<!-- column header -->
-							<li class="header_row_1 align_center"><h2>Developer</h2></li>
+							<li class="header_row_1 align_center radius5_top"><h2>Developer License</h2></li>
 							<li class="decor_line"></li>
-							<li class="header_row_2 align_center"><h1>$49</h1><h3>per month</h3></li>
+							<li class="header_row_2 align_center"><h1>$49</h1><h3>Buy &amp; Download</h3></li>
 							<!-- data rows -->
 							<li class="row_style_1 align_center"><span>10GB Disk Space</span></li>
 							<li class="row_style_3 align_center"><span>50GB Bandwidth</span></li>
@@ -79,33 +37,35 @@
 							<li class="row_style_1 align_center"><span>No</span></li>
 							<li class="row_style_3 align_center"><span>No</span></li>
 							<!-- column footer -->
-							<li class="footer_row"><a href="" class="button_2 radius5">sign up</a></li>
+							<li class="footer_row"><a id="csp-dev" href="https://www.e-junkie.com/ecom/gb.php?c=cart&amp;i=1067550&amp;cl=187765&amp;ejc=2" target="ej_ejc" class="ec_ejc_thkbx btn btn-seedprod btn-large" onclick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $49</a></li>
 						</ul>
 					</div>
-					<!-- column style 3 -->
-					<div class="column_3">
+
+										<!-- column style 1 -->
+					<div class="column_1">
 					<!-- ribbon (optional) -->
-					<div class="column_ribbon ribbon_style1_heart"></div>
+					<!--<div class="column_ribbon ribbon_style1_off5"></div>-->
 					<!-- /ribbon -->
 					
 						<ul>
 							<!-- column header -->
-							<li class="header_row_1 align_center radius5_topright"><h2>Business</h2></li>
+							<li class="header_row_1 align_center radius5_top"><h2>Personal License</h2></li>
 							<li class="decor_line"></li>
-							<li class="header_row_2 align_center radius5_bottomright"><h1>$7.95</h1><h3>per month</h3></li>
+							<li class="header_row_2 align_center"><h1>$29</h1><h3>Buy &amp; Download</h3></li>
 							<!-- data rows -->
-							<li class="row_style_1 align_center"><span>50GB Disk Space</span></li>
-							<li class="row_style_2 align_center"><span>100GB Bandwidth</span></li>
-							<li class="row_style_1 align_center"><span>Unlimited</span></li>
-							<li class="row_style_2 align_center"><span>20 Databases</span></li>
-							<li class="row_style_1 align_center"><span>Yes</span></li>
-							<li class="row_style_2 align_center"><span>Yes, 2 domains</span></li>
+							<li class="row_style_1 align_center"><span>2GB Disk Space</span></li>
+							<li class="row_style_2 align_center"><span>10GB Bandwidth</span></li>
+							<li class="row_style_1 align_center"><span>5 Accounts</span></li>
+							<li class="row_style_2 align_center"><span>2 Databases</span></li>
 							<li class="row_style_1 align_center"><span>Yes</span></li>
 							<li class="row_style_2 align_center"><span>No</span></li>
+							<li class="row_style_1 align_center"><span>No</span></li>
+							<li class="row_style_2 align_center"><span>No</span></li>
 							<!-- column footer -->
-							<li class="footer_row"><a href="" class="button_3 radius5">sign up</a></li>
+							<li class="footer_row"><a id="csp-per" href="https://www.e-junkie.com/ecom/gb.php?c=cart&amp;i=1067548&amp;cl=187765&amp;ejc=2&amp;amount=10" target="ej_ejc" class="ec_ejc_thkbx btn btn-price2" onclick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $29</a></li>
 						</ul>
 					</div>
+
 
 				
 				</div>
@@ -125,8 +85,11 @@
 			<blockquote class="twitter-tweet"><p>Awesome awesome customer service from @<a href="https://twitter.com/seedprod">seedprod</a> - the best coming soon plug in for WordPress by a long shot</p>&mdash; Nicola Wise (@webtechforwomen) <a href="https://twitter.com/webtechforwomen/status/238263229208481792" data-datetime="2012-08-22T13:15:55+00:00">August 22, 2012</a></blockquote>
 		</div>
 	</div>
+	<br>
+	<p>
+		<a href="/testimonials/">See More Reviews <i class="icon-hand-right"></i></a>
+	</p>
 	</div>
-	<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 	<!-- FAQ's -->
 	<div id="pricing-faqs">
@@ -153,7 +116,7 @@
 			  </div>
 			  <div class="span6">
 			    <div>
-			        <h3>What happens after my support and updates end?</h3><p>If you purchase a license with limited support and updates the plugin will continue to function normally after your initial term. If you'd like to renew, you'll be able to at a discounted rate.
+			        <h3>What happens after my support and updates end?</h3><p>If you purchase a license with limited support and updates, the plugin will continue to function normally after your initial term. If you'd like to renew, you'll be able to at a discounted rate.
 			        </p>
 			    </div> 
 			  </div>

@@ -190,70 +190,7 @@ div.p_table div.column_4 li.header_row_2
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #137872), color-stop(1, #0e5b56)); /* Chrome 10, Safari */	
 	}
 	
-/* ==================== COLUMN HOVERS ==================== */
-/* --- column 1 ---  */
-div.p_table div.column_1:hover li.row_style_1
-	{
-	background-color: #a3ba4e;
-	}
-	
-div.p_table div.column_1:hover li.row_style_2
-	{
-	background-color: #90ad42;
-	}
-	
-div.p_table div.column_1:hover li.footer_row
-	{
-	background-color: #a3ba4e;
-	}
-	
-/* --- column 2 ---  */	
-div.p_table div.column_2:hover li.row_style_1
-	{
-	background-color: #70a048;
-	}
-	
-div.p_table div.column_2:hover li.row_style_3
-	{
-	background-color: #5f8d3d;
-	}
-	
-div.p_table div.column_2:hover li.footer_row
-	{
-	background-color: #70a048;
-	}
-	
-/* --- column 3 ---  */	
-div.p_table div.column_3:hover li.row_style_1
-	{
-	background-color: #348955;
-	}
-	
-div.p_table div.column_3:hover li.row_style_2
-	{
-	background-color: #2c7548;
-	}
-	
-div.p_table div.column_3:hover li.footer_row
-	{
-	background-color: #348955;
-	}
 
-/* --- column 4 ---  */	
-div.p_table div.column_4:hover li.row_style_1
-	{
-	background-color: #116c66;
-	}
-	
-div.p_table div.column_4:hover li.row_style_3
-	{
-	background-color: #0e5b56;
-	}
-	
-div.p_table div.column_4:hover li.footer_row
-	{
-	background-color: #116c66;
-	}
 	
 /* ==================== BUTTONS ==================== */
 div.p_table a.button_1

@@ -1,23 +1,20 @@
 
-@font-face 
+/*@font-face 
 	{
-	font-family: 'YanoneKaffeesatzRegular';
+	font-family: 'Yanone Kaffeesatz';
 	src: url('font/YanoneKaffeesatz-Regular-webfont.eot');
 	src: local('-'), url('font/YanoneKaffeesatz-Regular-webfont.woff') format('woff'), url('font/YanoneKaffeesatz-Regular-webfont.ttf') format('truetype'), url('font/YanoneKaffeesatz-Regular-webfont.svg#webfontlKPF1zIT') format('svg');
 	font-weight: normal;
 	font-style: normal;
-	}	
+	}*/
 /* ==================== PRICING TABLE  ==================== */
+
+
 /* --- base --- */
 div.p_table 
 	{
-	width: 870px; /* --- width sum of div.caption_column, div.column_1, div.column_2, div.column_3, div.column_4 --- */
-	height: 100%;
-	font-size: 13px;
-	font-family: arial, sans-serif;
-	font-weight: normal;
 	color: #303030;
-	line-height: normal !important;
+	font-size:13px
 	}
 
 /* --- main border --- */
@@ -25,7 +22,8 @@ div.p_table .frame_border
 	{
 	background-color: #ffffff;
 	padding: 10px !important;
-	float: left;
+	width: 630px;
+	margin:0 auto;
 	}
 	
 /* --- hyperlinks --- */
@@ -80,6 +78,14 @@ div.p_table .radius5_topleft
 	-webkit-border-top-left-radius: 5px;
 	-moz-border-radius-topleft: 5px;
 	}
+
+/* --- border radius 5px top left --- */	
+div.p_table .radius5_top
+	{
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-top-radius: 5px;
+	-moz-border-radius-top: 5px;
+	}
 	
 /* --- border radius 5px top right --- */	
 div.p_table .radius5_topright
@@ -87,6 +93,7 @@ div.p_table .radius5_topright
 	border-radius: 0px 5px 0px 0px;
 	-webkit-border-top-right-radius: 5px;
 	-moz-border-radius-topright: 5px;
+
 	}
 	
 /* --- border radius 5px bottom right --- */	
@@ -120,13 +127,13 @@ div.p_table h3
 	
 div.p_table h1
 	{
-	font-family: 'YanoneKaffeesatzRegular', arial, sans-serif;
+	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
 	font-size: 48px;
 	}
 
 div.p_table h2
 	{
-	font-family: 'YanoneKaffeesatzRegular', arial, sans-serif;
+	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
 	font-size: 28px;
 	}
 	
@@ -203,7 +210,7 @@ div.p_table div.caption_column
 /* =================== COLUMN STYLE 1  ==================== */
 div.p_table div.column_1
 	{
-	width: 170px;
+	width: 230px;
 	height: 100%;
 	float: left;
 	position: relative;
@@ -212,7 +219,7 @@ div.p_table div.column_1
 /* ==================== COLUMN STYLE 2  ==================== */
 div.p_table div.column_2
 	{
-	width: 200px;
+	width: 300px;
 	height: 100%;
 	float: left;
 	position: relative;
@@ -262,29 +269,7 @@ div.p_table div.column_4:hover li.footer_row
 	-moz-border-radius-bottomleft: 5px;
 	}
 	
-div.p_table div.column_1:hover li.row_style_1,
-div.p_table div.column_2:hover li.row_style_1,
-div.p_table div.column_3:hover li.row_style_1,
-div.p_table div.column_4:hover li.row_style_1,
-div.p_table div.column_1:hover li.row_style_2,
-div.p_table div.column_2:hover li.row_style_3,
-div.p_table div.column_3:hover li.row_style_2,
-div.p_table div.column_4:hover li.row_style_3
-	{
-	color: #ffffff;
-	}
-	
-div.p_table div.column_1:hover li.row_style_1 a,
-div.p_table div.column_2:hover li.row_style_1 a,
-div.p_table div.column_3:hover li.row_style_1 a,
-div.p_table div.column_4:hover li.row_style_1 a,
-div.p_table div.column_1:hover li.row_style_2 a,
-div.p_table div.column_2:hover li.row_style_3 a,
-div.p_table div.column_3:hover li.row_style_2 a,
-div.p_table div.column_4:hover li.row_style_3 a
-	{
-	color: #ffffff;
-	}
+
 	
 /*==================== DATA ROWS  ====================*/
 /* ------ common styles ------  */
@@ -369,7 +354,7 @@ div.p_table a.button_4
 	-webkit-box-shadow: 0px 1px 0px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0px 1px 0px rgba(0,0,0,0.15);
 	/* font */
-	font-family: 'YanoneKaffeesatzRegular', arial, sans-serif;
+	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
 	color: #ffffff;
 	font-size: 24px;
 	/* poz correction */
@@ -414,68 +399,68 @@ div.column_ribbon
 	
 /* ------ ribbon styles ------  */
 /* --- style1--- */	
-div.ribbon_style1_best { background: url(../ribbons/ribbon_style1_best.png); }
-div.ribbon_style1_buy { background: url(../ribbons/ribbon_style1_buy.png); }
-div.ribbon_style1_free { background: url(../ribbons/ribbon_style1_free.png); }
-div.ribbon_style1_free_caps { background: url(../ribbons/ribbon_style1_free_caps.png); }
-div.ribbon_style1_fresh { background: url(../ribbons/ribbon_style1_fresh.png); }
-div.ribbon_style1_gift_caps { background: url(../ribbons/ribbon_style1_gift_caps.png); }
-div.ribbon_style1_heart { background: url(../ribbons/ribbon_style1_heart.png); }
-div.ribbon_style1_hot { background: url(../ribbons/ribbon_style1_hot.png); }
-div.ribbon_style1_hot_caps { background: url(../ribbons/ribbon_style1_hot_caps.png); }
-div.ribbon_style1_new { background: url(../ribbons/ribbon_style1_new.png); }
-div.ribbon_style1_new_caps { background: url(../ribbons/ribbon_style1_new_caps.png); }
-div.ribbon_style1_no1 { background: url(../ribbons/ribbon_style1_no1.png); }
-div.ribbon_style1_off5 { background: url(../ribbons/ribbon_style1_off5.png); }
-div.ribbon_style1_off10 { background: url(../ribbons/ribbon_style1_off10.png); }
-div.ribbon_style1_off15 { background: url(../ribbons/ribbon_style1_off15.png); }
-div.ribbon_style1_off20 { background: url(../ribbons/ribbon_style1_off20.png); }
-div.ribbon_style1_off25 { background: url(../ribbons/ribbon_style1_off25.png); }
-div.ribbon_style1_off30 { background: url(../ribbons/ribbon_style1_off30.png); }
-div.ribbon_style1_off35 { background: url(../ribbons/ribbon_style1_off35.png); }
-div.ribbon_style1_off40 { background: url(../ribbons/ribbon_style1_off40.png); }
-div.ribbon_style1_off50 { background: url(../ribbons/ribbon_style1_off50.png); }
-div.ribbon_style1_off75 { background: url(../ribbons/ribbon_style1_off75.png); }
-div.ribbon_style1_pack { background: url(../ribbons/ribbon_style1_pack.png); }
-div.ribbon_style1_pro { background: url(../ribbons/ribbon_style1_pro.png); }
-div.ribbon_style1_sale { background: url(../ribbons/ribbon_style1_sale.png); }
-div.ribbon_style1_save { background: url(../ribbons/ribbon_style1_save.png); }
-div.ribbon_style1_save_caps { background: url(../ribbons/ribbon_style1_save_caps.png); }
-div.ribbon_style1_top { background: url(../ribbons/ribbon_style1_top.png); }
-div.ribbon_style1_top_caps { background: url(../ribbons/ribbon_style1_top_caps.png); }
-div.ribbon_style1_trial { background: url(../ribbons/ribbon_style1_trial.png); }
+div.ribbon_style1_best { background: url(ribbons/ribbon_style1_best.png); }
+div.ribbon_style1_buy { background: url(ribbons/ribbon_style1_buy.png); }
+div.ribbon_style1_free { background: url(ribbons/ribbon_style1_free.png); }
+div.ribbon_style1_free_caps { background: url(ribbons/ribbon_style1_free_caps.png); }
+div.ribbon_style1_fresh { background: url(ribbons/ribbon_style1_fresh.png); }
+div.ribbon_style1_gift_caps { background: url(ribbons/ribbon_style1_gift_caps.png); }
+div.ribbon_style1_heart { background: url(ribbons/ribbon_style1_heart.png); }
+div.ribbon_style1_hot { background: url(ribbons/ribbon_style1_hot.png); }
+div.ribbon_style1_hot_caps { background: url(ribbons/ribbon_style1_hot_caps.png); }
+div.ribbon_style1_new { background: url(ribbons/ribbon_style1_new.png); }
+div.ribbon_style1_new_caps { background: url(ribbons/ribbon_style1_new_caps.png); }
+div.ribbon_style1_no1 { background: url(ribbons/ribbon_style1_no1.png); }
+div.ribbon_style1_off5 { background: url(ribbons/ribbon_style1_off5.png); }
+div.ribbon_style1_off10 { background: url(ribbons/ribbon_style1_off10.png); }
+div.ribbon_style1_off15 { background: url(ribbons/ribbon_style1_off15.png); }
+div.ribbon_style1_off20 { background: url(ribbons/ribbon_style1_off20.png); }
+div.ribbon_style1_off25 { background: url(ribbons/ribbon_style1_off25.png); }
+div.ribbon_style1_off30 { background: url(ribbons/ribbon_style1_off30.png); }
+div.ribbon_style1_off35 { background: url(ribbons/ribbon_style1_off35.png); }
+div.ribbon_style1_off40 { background: url(ribbons/ribbon_style1_off40.png); }
+div.ribbon_style1_off50 { background: url(ribbons/ribbon_style1_off50.png); }
+div.ribbon_style1_off75 { background: url(ribbons/ribbon_style1_off75.png); }
+div.ribbon_style1_pack { background: url(ribbons/ribbon_style1_pack.png); }
+div.ribbon_style1_pro { background: url(ribbons/ribbon_style1_pro.png); }
+div.ribbon_style1_sale { background: url(ribbons/ribbon_style1_sale.png); }
+div.ribbon_style1_save { background: url(ribbons/ribbon_style1_save.png); }
+div.ribbon_style1_save_caps { background: url(ribbons/ribbon_style1_save_caps.png); }
+div.ribbon_style1_top { background: url(ribbons/ribbon_style1_top.png); }
+div.ribbon_style1_top_caps { background: url(ribbons/ribbon_style1_top_caps.png); }
+div.ribbon_style1_trial { background: url(ribbons/ribbon_style1_trial.png); }
 
 /* --- style2--- */
-div.ribbon_style2_best { background: url(../ribbons/ribbon_style2_best.png); }
-div.ribbon_style2_buy { background: url(../ribbons/ribbon_style2_buy.png); }
-div.ribbon_style2_free { background: url(../ribbons/ribbon_style2_free.png); }
-div.ribbon_style2_free_caps { background: url(../ribbons/ribbon_style2_free_caps.png); }
-div.ribbon_style2_fresh { background: url(../ribbons/ribbon_style2_fresh.png); }
-div.ribbon_style2_gift_caps { background: url(../ribbons/ribbon_style2_gift_caps.png); }
-div.ribbon_style2_heart { background: url(../ribbons/ribbon_style2_heart.png); }
-div.ribbon_style2_hot { background: url(../ribbons/ribbon_style2_hot.png); }
-div.ribbon_style2_hot_caps { background: url(../ribbons/ribbon_style2_hot_caps.png); }
-div.ribbon_style2_new { background: url(../ribbons/ribbon_style2_new.png); }
-div.ribbon_style2_new_caps { background: url(../ribbons/ribbon_style2_new_caps.png); }
-div.ribbon_style2_no1 { background: url(../ribbons/ribbon_style2_no1.png); }
-div.ribbon_style2_off5 { background: url(../ribbons/ribbon_style2_off5.png); }
-div.ribbon_style2_off10 { background: url(../ribbons/ribbon_style2_off10.png); }
-div.ribbon_style2_off15 { background: url(../ribbons/ribbon_style2_off15.png); }
-div.ribbon_style2_off20 { background: url(../ribbons/ribbon_style2_off20.png); }
-div.ribbon_style2_off25 { background: url(../ribbons/ribbon_style2_off25.png); }
-div.ribbon_style2_off30 { background: url(../ribbons/ribbon_style2_off30.png); }
-div.ribbon_style2_off35 { background: url(../ribbons/ribbon_style2_off35.png); }
-div.ribbon_style2_off40 { background: url(../ribbons/ribbon_style2_off40.png); }
-div.ribbon_style2_off50 { background: url(../ribbons/ribbon_style2_off50.png); }
-div.ribbon_style2_off75 { background: url(../ribbons/ribbon_style2_off75.png); }
-div.ribbon_style2_pack { background: url(../ribbons/ribbon_style2_pack.png); }
-div.ribbon_style2_pro { background: url(../ribbons/ribbon_style2_pro.png); }
-div.ribbon_style2_sale { background: url(../ribbons/ribbon_style2_sale.png); }
-div.ribbon_style2_save { background: url(../ribbons/ribbon_style2_save.png); }
-div.ribbon_style2_save_caps { background: url(../ribbons/ribbon_style2_save_caps.png); }
-div.ribbon_style2_top { background: url(../ribbons/ribbon_style2_top.png); }
-div.ribbon_style2_top_caps { background: url(../ribbons/ribbon_style2_top_caps.png); }
-div.ribbon_style2_trial { background: url(../ribbons/ribbon_style2_trial.png); }
+div.ribbon_style2_best { background: url(ribbons/ribbon_style2_best.png); }
+div.ribbon_style2_buy { background: url(ribbons/ribbon_style2_buy.png); }
+div.ribbon_style2_free { background: url(ribbons/ribbon_style2_free.png); }
+div.ribbon_style2_free_caps { background: url(ribbons/ribbon_style2_free_caps.png); }
+div.ribbon_style2_fresh { background: url(ribbons/ribbon_style2_fresh.png); }
+div.ribbon_style2_gift_caps { background: url(ribbons/ribbon_style2_gift_caps.png); }
+div.ribbon_style2_heart { background: url(ribbons/ribbon_style2_heart.png); }
+div.ribbon_style2_hot { background: url(ribbons/ribbon_style2_hot.png); }
+div.ribbon_style2_hot_caps { background: url(ribbons/ribbon_style2_hot_caps.png); }
+div.ribbon_style2_new { background: url(ribbons/ribbon_style2_new.png); }
+div.ribbon_style2_new_caps { background: url(ribbons/ribbon_style2_new_caps.png); }
+div.ribbon_style2_no1 { background: url(ribbons/ribbon_style2_no1.png); }
+div.ribbon_style2_off5 { background: url(ribbons/ribbon_style2_off5.png); }
+div.ribbon_style2_off10 { background: url(ribbons/ribbon_style2_off10.png); }
+div.ribbon_style2_off15 { background: url(ribbons/ribbon_style2_off15.png); }
+div.ribbon_style2_off20 { background: url(ribbons/ribbon_style2_off20.png); }
+div.ribbon_style2_off25 { background: url(ribbons/ribbon_style2_off25.png); }
+div.ribbon_style2_off30 { background: url(ribbons/ribbon_style2_off30.png); }
+div.ribbon_style2_off35 { background: url(ribbons/ribbon_style2_off35.png); }
+div.ribbon_style2_off40 { background: url(ribbons/ribbon_style2_off40.png); }
+div.ribbon_style2_off50 { background: url(ribbons/ribbon_style2_off50.png); }
+div.ribbon_style2_off75 { background: url(ribbons/ribbon_style2_off75.png); }
+div.ribbon_style2_pack { background: url(ribbons/ribbon_style2_pack.png); }
+div.ribbon_style2_pro { background: url(ribbons/ribbon_style2_pro.png); }
+div.ribbon_style2_sale { background: url(ribbons/ribbon_style2_sale.png); }
+div.ribbon_style2_save { background: url(ribbons/ribbon_style2_save.png); }
+div.ribbon_style2_save_caps { background: url(ribbons/ribbon_style2_save_caps.png); }
+div.ribbon_style2_top { background: url(ribbons/ribbon_style2_top.png); }
+div.ribbon_style2_top_caps { background: url(ribbons/ribbon_style2_top_caps.png); }
+div.ribbon_style2_trial { background: url(ribbons/ribbon_style2_trial.png); }
 
 /* ==================== TOOLTIP  ==================== */
 /* --- base --- */
