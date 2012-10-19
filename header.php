@@ -26,10 +26,13 @@
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
 		<!-- Styles -->
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+
 
 
 
@@ -100,14 +103,14 @@
 							<?php if(is_page('thank-you')): ?>
 							<li><a href="http://www.seedprod.com" >Back to SeedProd</a></li>
 							<?php else: ?>
-							<li><a href="/">Home</a></li>
-							<li><a href="/features/">Features</a></li>
-							<li><a href="/pricing/">Pricing</a></li>
+							<li><a href="/"><i class="icon-home icon-white"></i> Home</a></li>
+							<li><a href="/features/"><i class="icon-star icon-white"></i> Features</a></li>
+							<li><a href="/pricing/"><i class="icon-certificate icon-white"></i> Pricing</a></li>
 							<!-- <li><a href="http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing" onclick="_gaq.push(['_link',
 'http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing']); return false;">Pricing</a></li> -->
-							<li><a href="/showcase/">Showcase</a></li>
-							<li><a href="/blog/">Blog</a></li>
-							<li><a href="/support/">Support</a></li>
+							<li><a href="/showcase/"><i class="icon-picture icon-white"></i> Showcase</a></li>
+							<li><a href="/blog/"><i class="icon-pencil icon-white"></i> Blog</a></li>
+							<li><a href="/support/"><i class="icon-user icon-white"></i> Support</a></li>
 							<?php endif; ?>
 						</ul>
 					</div><!-- .nav-collapse -->
@@ -121,7 +124,7 @@
 		}
 		?>
 	</div> <!-- /#hb -->
-	<div class="well">
+	<div class="bt-header handscript">
 	</div>
 
 
