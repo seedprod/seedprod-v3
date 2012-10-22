@@ -28,14 +28,12 @@
 							<li class="decor_line"></li>
 							<li class="header_row_2 align_center"><h1>$49</h1><h3>Buy &amp; Download</h3></li>
 							<!-- data rows -->
-							<li class="row_style_1 align_center"><span>10GB Disk Space</span></li>
-							<li class="row_style_3 align_center"><span>50GB Bandwidth</span></li>
-							<li class="row_style_1 align_center"><span>10 Accounts</span></li>
-							<li class="row_style_3 align_center"><span>10 Databases</span></li>
-							<li class="row_style_1 align_center"><span>Yes</span></li>
-							<li class="row_style_3 align_center"><span>Yes</span></li>
-							<li class="row_style_1 align_center"><span>No</span></li>
-							<li class="row_style_3 align_center"><span>No</span></li>
+							<li class="row_style_1 align_center"><span>Updates and Support on Sites You Own or Client Site</span></li>
+							<li class="row_style_3 align_center"><span>1 Year Automatic Updates</span></li>
+							<li class="row_style_1 align_center"><span>1 Year Priority Email Support</span></li>
+							<li class="row_style_3 align_center"><span>Perfect for Developers and Marketers</span></li>
+							<li class="row_style_1 align_center"><span>WordPress MultiSite Support</span></li>
+							<li class="row_style_3 align_center"><span><a href="/features/">See all the Features</a></span></li>
 							<!-- column footer -->
 							<li class="footer_row"><a id="csp-dev" href="https://www.e-junkie.com/ecom/gb.php?c=cart&amp;i=1067550&amp;cl=187765&amp;ejc=2" target="ej_ejc" class="ec_ejc_thkbx btn btn-seedprod btn-large" onclick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $49</a></li>
 						</ul>
@@ -53,14 +51,11 @@
 							<li class="decor_line"></li>
 							<li class="header_row_2 align_center"><h1>$29</h1><h3>Buy &amp; Download</h3></li>
 							<!-- data rows -->
-							<li class="row_style_1 align_center"><span>2GB Disk Space</span></li>
-							<li class="row_style_2 align_center"><span>10GB Bandwidth</span></li>
-							<li class="row_style_1 align_center"><span>5 Accounts</span></li>
-							<li class="row_style_2 align_center"><span>2 Databases</span></li>
-							<li class="row_style_1 align_center"><span>Yes</span></li>
-							<li class="row_style_2 align_center"><span>No</span></li>
-							<li class="row_style_1 align_center"><span>No</span></li>
-							<li class="row_style_2 align_center"><span>No</span></li>
+							<li class="row_style_1 align_center"><span>Updates and Support on 1 Site</span></li>
+							<li class="row_style_2 align_center"><span>1 Year Automatic Updates</span></li>
+							<li class="row_style_1 align_center"><span>1 Year Email Support</span></li>
+							<li class="row_style_2 align_center"><span>Perfect for Someone who only has one Website</span></li>
+							<li class="row_style_1 align_center"><span><a href="/features/">See all the Features</a></span></li>
 							<!-- column footer -->
 							<li class="footer_row"><a id="csp-per" href="https://www.e-junkie.com/ecom/gb.php?c=cart&amp;i=1067548&amp;cl=187765&amp;ejc=2&amp;amount=10" target="ej_ejc" class="ec_ejc_thkbx btn btn-price2" onclick="javascript:return EJEJC_lc(this);"><i class="icon-shopping-cart icon-white"></i> Buy Now $29</a></li>
 						</ul>
