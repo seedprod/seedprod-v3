@@ -14,7 +14,7 @@
 <h3>Search</h3>
 <form id="quick-search" action="/search/" method="get">
       <p>
-        <input type="hidden" name="cref" value="http://www.seedprod.com/cse.xml" />
+        <input type="hidden" name="cref" value="<?php echo get_stylesheet_directory_uri(); ?>/cse.xml" />
         <input type="hidden" name="cof" value="FORID:11" />
         <input type="hidden" name="ie" value="UTF-8" />
         <input type="text" name="q" size="31" />

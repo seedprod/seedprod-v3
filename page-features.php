@@ -83,11 +83,6 @@
 			<br><br>
 			<blockquote class="twitter-tweet"><p>Need to create a great coming soon page for your WordPress website? Try @<a href="https://twitter.com/seedprod">seedprod</a>Excellent customer support, too!</p>&mdash; Lisa League, ASID (@agirlandaMac) <a href="https://twitter.com/agirlandaMac/status/224142107932229632" data-datetime="2012-07-14T14:03:37+00:00">July 14, 2012</a></blockquote>
 
-			<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
 		  </div>
 		  <div class="span8">
 		    <div class="fl-feature" class="clearfix">

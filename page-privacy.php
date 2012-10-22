@@ -2,6 +2,7 @@
 	<div class="container">
 		<div class="well">
 			<div class="row-fluid">
+				<h1>Privacy Policy</h1>
 											<p>Like most website operators, SeedProd collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. SeedProd’s purpose in collecting non-personally identifying information is to better understand how SeedProd’s visitors use its website. From time to time, SeedProd may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website.</p>
 							<p>SeedProd also collects potentially personally-identifying information like Internet Protocol (IP) addresses for logged in users and for users leaving comments on SeedProd blogs. SeedProd only discloses logged in user and commenter IP addresses under the same circumstances that it uses and discloses personally-identifying information as described below, except that blog commenter IP addresses are visible and disclosed to the administrators of the blog where the comment was left.</p>
 							<h3>Gathering of Personally-Identifying Information</h3>

@@ -28,7 +28,7 @@
 							<li class="decor_line"></li>
 							<li class="header_row_2 align_center"><h1>$49</h1><h3>Buy &amp; Download</h3></li>
 							<!-- data rows -->
-							<li class="row_style_1 align_center"><span>Updates and Support on Sites You Own or Client Site</span></li>
+							<li class="row_style_1 align_center"><span>Updates and Support on <br>Sites You Own or Client Sites</span></li>
 							<li class="row_style_3 align_center"><span>1 Year Automatic Updates</span></li>
 							<li class="row_style_1 align_center"><span>1 Year Priority Email Support</span></li>
 							<li class="row_style_3 align_center"><span>Perfect for Developers and Marketers</span></li>

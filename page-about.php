@@ -6,6 +6,6 @@
 <p>If you have any questions or just want to say hi, <a href="/contact/">contact me</a>!</p>
 
 <a href="https://twitter.com/johnturner" class="twitter-follow-button" data-show-count="false">Follow @johnturner</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 </div>
 <?php get_footer(); ?>

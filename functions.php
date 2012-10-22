@@ -1,5 +1,7 @@
 <?php 
 
+add_theme_support( 'automatic-feed-links' );
+
 // WooCommerce affiliate tracking
 add_action('woocommerce_thankyou', 'affiliate_tracking');
 
