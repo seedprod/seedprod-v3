@@ -49,6 +49,7 @@
 		      <li><a href="#feature13">Campaign Monitor Integration</a></li>
 		      <li><a href="#feature30">GetResponse Integration</a></li>
 		      <li><a href="#feature14">Gravity Forms Integration</a></li>
+		      <li><a href="#feature50">WYSIJA Integration</a></li>
 		      <li><a href="#feature15">Store Emails in the WordPress Database</a></li>
 		      <li><a href="#feature32">Capture First &amp; Last Name</a></li>
 		      <li><a href="#feature16">Google Analytics Support</a></li>
@@ -270,6 +271,14 @@
 		      <h3>Gravity Forms Integration</h3>
 		      <p>
 		        Use Gravity Forms to collect as much information as you want from your visitors.
+		      </p>
+		    </div>
+		    <div class="fl-feature" class="clearfix">
+		      <a name="feature50"></a>
+		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wysija-logo.png">
+		      <h3>WYSIJA Integration</h3>
+		      <p>
+		        Use WYSIJA to collect as much information as you want from your visitors.
 		      </p>
 		    </div>
 		    <div class="fl-feature" class="clearfix">
