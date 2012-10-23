@@ -21,12 +21,42 @@
 
 
 		<!-- Feature List -->
-		<br><br>
+		<ul id="features-tb" class="nav nav-tabs">
+		  <li class="active"><a href="#home" data-toggle="tab">Features</a></li>
+		  <li><a href="#profile" data-toggle="tab">Live Preview</a></li>
+		  <li><a href="#messages" data-toggle="tab">Screenshots</a></li>
+		  <li><a href="#settings" data-toggle="tab">Video</a></li>
+		  <li><a href="#settings" data-toggle="tab">Try Before You Buy</a></li>
+		  <li><a href="#settings" data-toggle="tab">Changelog</a></li>
+		</ul>
+		<div class="tab-content">
+		  <div class="tab-pane active" id="home">fggsg</div>
+		  <div class="tab-pane" id="profile">gfdgfg</div>
+		  <div class="tab-pane" id="messages">dsfgfdgf</div>
+		  <div class="tab-pane" id="settings">sdgdf</div>
+		</div>
+		<script>
+		jQuery(document).ready(function($) {
+			$('#features-tb').click(function (e) {
+			  e.preventDefault();
+			  $(this).tab('show');
+			});
+			$('#features-tb a:first').tab('show');
+			$('#feature-list .nav-list').scrollspy();
+
+			  // $('#feature-list ul').affix({
+		   //    offset: {
+		   //      top: function () { return 210 }
+		   //    , bottom: 270
+		   //    }
+		    })
+		});	
+		</script>
 		<section>
 		<h2>Feature List</h2>
 		<div id="feature-list" class="row-fluid">
 		  <div class="span4">
-		    <ul>
+		    <ul class="nav nav-list">
 		      <li><a href="#feature1">Works with any WordPress Theme</a></li>
 		      <li><a href="#feature2">Visible only to non logged in Users</a></li>
 		      <li><a href="#feature28">Client View</a></li>
@@ -34,7 +64,7 @@
 		      <li><a href="#feature4">Mobile Ready</a></li>
 		      <li><a href="#feature5">Maintenance Mode</a></li>
 		      <li><a href="#feature6">Custom Look &amp; Feel</a></li>
-		      <li><a href="#feature31">Easily Embed Photos &amps; Videos</a></li>
+		      <li><a href="#feature31">Easily Embed Photos &amp; Videos</a></li>
 		      <li><a href="#feature26">Integrated Google Fonts</a></li>
 		      <li><a href="#feature29">Integrated with Typekit by Adobe</a></li>
 		      <li><a href="#feature7">Full Browser Backgrounds</a></li>
@@ -66,24 +96,6 @@
 		      
 		    </ul>
 			
-			<!-- Twitter Testimonials -->
-			<br><br>
-			<blockquote class="twitter-tweet"><p>Looking for a "Coming Soon" solution for WordPress? <a href="http://t.co/OquhIcfp" title="http://Seedprod.com">Seedprod.com</a> is pretty hard to go past. Easiest config I've seen in ages.</p>&mdash; Dan Rippon (@danrippon) <a href="https://twitter.com/danrippon/status/216812725991510016" data-datetime="2012-06-24T08:39:16+00:00">June 24, 2012</a></blockquote>
-			<br><br>
-			<blockquote class="twitter-tweet"><p>Awesome! @<a href="https://twitter.com/seedprod">seedprod</a> Your plugin lives up to it's name - surpassed all my expectations. Now on my standard list of recommendations.</p>&mdash; Tony Kinard (@TonyKinard) <a href="https://twitter.com/TonyKinard/status/212375297176248321" data-datetime="2012-06-12T02:46:31+00:00">June 12, 2012</a></blockquote>
-			<br><br>
-			<blockquote class="twitter-tweet"><p>Just want to shout out @<a href="https://twitter.com/seedprod">seedprod</a> for seriously having the best coming soon plugin. Easy to use, beautiful to look at! Go check it out</p>&mdash; Jonathan (@SureFireWebServ) <a href="https://twitter.com/SureFireWebServ/status/210425206748094464" data-datetime="2012-06-06T17:37:33+00:00">June 6, 2012</a></blockquote>
-			<br><br>
-			<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/seedprod">seedprod</a> just picked up your plugin.It's awesome!</p>&mdash; Kelley Rao - Webeze (@webeze) <a href="https://twitter.com/webeze/status/208343790329671680" data-datetime="2012-05-31T23:46:45+00:00">May 31, 2012</a></blockquote>
-			<br><br>
-			<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/seedprod">seedprod</a> Love your plugin John! And thanks for your prompt, helpful support today. Be blessed!</p>&mdash; Greg Cross (@gregorycross) <a href="https://twitter.com/gregorycross/status/208763748423446528" data-datetime="2012-06-02T03:35:30+00:00">June 2, 2012</a></blockquote>
-			<br><br>
-			<blockquote class="twitter-tweet"><p>A favorite <a href="https://twitter.com/search/%2523WordPress">#WordPress</a> <a href="https://twitter.com/search/%2523plugin">#plugin</a> is SeedProd Coming Soon Page.<a href="https://twitter.com/search/%2523FollowFriday">#FollowFriday</a> @<a href="https://twitter.com/johnturner">johnturner</a> &amp; @<a href="https://twitter.com/seedprod">seedprod</a>Active on my site:<a href="http://t.co/CxCaFdzm" title="http://ow.ly/ayWbv">ow.ly/ayWbv</a></p>&mdash; Lori Sawaya (@funcolors) <a href="https://twitter.com/funcolors/status/195917453929357312" data-datetime="2012-04-27T16:48:55+00:00">April 27, 2012</a></blockquote>
-			<br><br>
-			<blockquote class="twitter-tweet"><p>Want to create a great looking 'coming soon' landing page and grab emails easily? Check out @<a href="https://twitter.com/seedprod">seedprod</a> - <a href="http://t.co/2tIO5Qcq" title="http://bit.ly/HcnZPk">bit.ly/HcnZPk</a> - <a href="https://twitter.com/search/%2523marketing">#marketing</a></p>&mdash; Chris C. Ducker (@chriscducker) <a href="https://twitter.com/chriscducker/status/187149524916117504" data-datetime="2012-04-03T12:08:18+00:00">April 3, 2012</a></blockquote>
-			<br><br>
-			<blockquote class="twitter-tweet"><p>Need to create a great coming soon page for your WordPress website? Try @<a href="https://twitter.com/seedprod">seedprod</a>Excellent customer support, too!</p>&mdash; Lisa League, ASID (@agirlandaMac) <a href="https://twitter.com/agirlandaMac/status/224142107932229632" data-datetime="2012-07-14T14:03:37+00:00">July 14, 2012</a></blockquote>
-
 		  </div>
 		  <div class="span8">
 		    <div class="fl-feature" class="clearfix">
@@ -399,14 +411,14 @@
 		<br><br>
 
 		<!-- Footer Action -->
-		<div class="alert">
+
 		<div id="footer-goto-features">
 		    <h3>Buy Now and Increase Your Chance Of Launching A Successful WordPress Website</h3>
 		    <a href="/pricing/"  class="btn btn-large btn-seedprod"><i class="icon-shopping-cart icon-white"></i> See Pricing</a>
 		    <!-- <a href="http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing" onclick="_gaq.push(['_link',
 'http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing']); return false;" class="btn btn-large btn-seedprod"><i class="icon-shopping-cart icon-white"></i> See Pricing</a> -->
 		</div>
-		</div>
+		
 
 
 
