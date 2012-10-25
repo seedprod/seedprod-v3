@@ -1093,10 +1093,13 @@ body{background:#f5f5f5;}
 #integration-partners img{margin:10px auto;display:block;}
 .product-btns{text-align:center;padding:20px 0;}
 #product-banner{position:relative;}#product-banner a{position:absolute;top:60%;left:18%;}
-#product-banner .product-btns{position:absolute;top:60%;left:-4%;}#product-banner .product-btns a{position:relative;}
-#feature-list ul li{padding-bottom:5px;}
-#feature-list p{font-size:14px;line-height:2opx;}
+#product-banner .product-btns{position:absolute;top:60%;left:12%;}#product-banner .product-btns a{position:relative;}
+#feature-list ul{width:210px;}
+#feature-list ul li{padding-bottom:0px;line-height:16px;}
+#feature-list p{font-size:14px;line-height:20px;}
 #feature-list .fl-feature{margin-bottom:20px;border-bottom:1px dotted #ccc;padding-bottom:10px;}#feature-list .fl-feature img{float:left;margin-right:10px;}
+#feature-list li{font-size:12px;}
+#feature-list .affix{position:fixed;top:59px;}
 #pricing-plans,#pricing-testimonials,#pricing-faqs{margin-bottom:60px;}
 .header_row_2 img{width:135px;margin:-30px 0 21px;}
 #pricing-plans h1{text-align:center;margin-bottom:0px;}

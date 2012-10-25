@@ -1,18 +1,12 @@
 <?php get_header(); ?>
 
-	<div class="well">
+	<div >
 		<!-- Banner -->
 		<div id="product-banner">
 		    <img class="thumbnail" src="<?php echo get_stylesheet_directory_uri(); ?>/images/products/banner-coming-soon-pro.jpg">
 		    <!-- Buttons -->
 		    <div class="product-btns">
-		        <a href="/coming-soon-pro-version-3-walkthrough/" title="Coming Soon Pro v3" class="btn btn-seedprod"><i class="icon-facetime-video icon-white"></i> Video Preview</a>
-
-		    <!--     <a href="#" class="btn btn-seedprod"><i class="icon-picture icon-white"></i> Screenshots</a> -->
-		        <a target="_blank" href="http://demo.seedprod.com/coming-soon-pro/" class="btn btn-seedprod"><i class="icon-eye-open icon-white"></i> Coming Soon Demo</a>
-		        <a target="_blank" href="http://demo.seedprod.com/" class="btn btn-seedprod" target="_blank"><i class="icon-asterisk icon-white"></i> Try Before You Buy</a> 
-
-		        <a href="/pricing/" class="btn btn-seedprod"><i class="icon-shopping-cart icon-white"></i> Buy Now</a> 
+		        <a href="/pricing/" class="btn btn-large btn-seedprod"><i class="icon-shopping-cart icon-white"></i> See Pricing</a> 
 		        <!-- <a href="http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing" onclick="_gaq.push(['_link',
 'http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing']); return false;" class="btn btn-seedprod"><i class="icon-shopping-cart icon-white"></i> Buy Now</a> --> 
 		    </div>
@@ -22,41 +16,21 @@
 
 		<!-- Feature List -->
 		<ul id="features-tb" class="nav nav-tabs">
-		  <li class="active"><a href="#home" data-toggle="tab">Features</a></li>
-		  <li><a href="#profile" data-toggle="tab">Live Preview</a></li>
-		  <li><a href="#messages" data-toggle="tab">Screenshots</a></li>
-		  <li><a href="#settings" data-toggle="tab">Video</a></li>
-		  <li><a href="#settings" data-toggle="tab">Try Before You Buy</a></li>
-		  <li><a href="#settings" data-toggle="tab">Changelog</a></li>
+		  <li class="active"><a href="#features" data-toggle="tab">Features</a></li>
+		  <li><a href="#screenshots" data-toggle="tab">Screenshots</a></li>
+		  <li><a href="#video" data-toggle="tab">Video</a></li>
+		  <li><a href="#preview" data-toggle="tab">Live Preview</a></li>
+		  <li><a href="#try" data-toggle="tab">Try Before You Buy</a></li>
+		  <li><a href="#changelog" data-toggle="tab">Changelog</a></li>
 		</ul>
 		<div class="tab-content">
-		  <div class="tab-pane active" id="home">fggsg</div>
-		  <div class="tab-pane" id="profile">gfdgfg</div>
-		  <div class="tab-pane" id="messages">dsfgfdgf</div>
-		  <div class="tab-pane" id="settings">sdgdf</div>
-		</div>
-		<script>
-		jQuery(document).ready(function($) {
-			$('#features-tb').click(function (e) {
-			  e.preventDefault();
-			  $(this).tab('show');
-			});
-			$('#features-tb a:first').tab('show');
-			$('#feature-list .nav-list').scrollspy();
+		  <div class="tab-pane active" id="features">
 
-			  // $('#feature-list ul').affix({
-		   //    offset: {
-		   //      top: function () { return 210 }
-		   //    , bottom: 270
-		   //    }
-		    })
-		});	
-		</script>
-		<section>
 		<h2>Feature List</h2>
 		<div id="feature-list" class="row-fluid">
 		  <div class="span4">
-		    <ul class="nav nav-list">
+		  <div id="featurespy">
+		    <ul class="nav nav-list well">
 		      <li><a href="#feature1">Works with any WordPress Theme</a></li>
 		      <li><a href="#feature2">Visible only to non logged in Users</a></li>
 		      <li><a href="#feature28">Client View</a></li>
@@ -95,19 +69,18 @@
 		      <li><a href="#feature25">Exclude URLs</a></li>
 		      
 		    </ul>
-			
+		  </div>
 		  </div>
 		  <div class="span8">
-		    <div class="fl-feature" class="clearfix">
-		      <a name="feature1"></a>
+		  <div>
+		    <div id="feature1" class="fl-feature" class="clearfix">
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-wordpress.png">
 		      <h3>Works with any WordPress Theme</h3>
 		      <p>
 		        No matter which WordPress Theme you use SeedProd's Coming Soon Pro will work with it. 
 		      </p>
 		    </div>
-		    <div class="fl-feature" class="clearfix">
-		      <a name="feature2"></a>
+		    <div id="feature2" class="fl-feature" class="clearfix">
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/lock_closed.png">
 		      <h3>Visible only to non logged in Users</h3>
 		      <p>
@@ -402,13 +375,19 @@
 
 
 
-		 
-		    
+		  </div>
 		  </div>
 
 		</div>
-		</section>
-		<br><br>
+
+		</div> <!-- end tab -->
+		  <div class="tab-pane" id="screenshots">gfdgfg</div>
+		  <div class="tab-pane" id="video">dsfgfdgf</div>
+		  <div class="tab-pane" id="preview">sdgdf</div>
+		  <div class="tab-pane" id="try">sdgdf</div>
+		  <div class="tab-pane" id="changelog">sdgdf</div>
+		</div>
+		
 
 		<!-- Footer Action -->
 
@@ -423,4 +402,19 @@
 
 
 	</div>
+	<script>
+		jQuery(document).ready(function($) {
+			$('#features-tb').click(function (e) {
+			  e.preventDefault();
+			  $(this).tab('show');
+			});
+			$('#features-tb a:first').tab('show');
+
+			$('#feature-list ul').affix({
+		      offset: {
+		        top: 500
+		      }
+		    })
+		});	
+		</script>
 <?php get_footer(); ?>

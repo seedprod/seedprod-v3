@@ -76,7 +76,7 @@
 	<?php } ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> data-spy="scroll" data-target="#featurespy">
 		<div id="pg">
 
 		<div id="hd">	
