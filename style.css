@@ -1099,7 +1099,7 @@ body{background:#f5f5f5;}
 #feature-list p{font-size:14px;line-height:20px;}
 #feature-list .fl-feature{margin-bottom:20px;border-bottom:1px dotted #ccc;padding-bottom:10px;}#feature-list .fl-feature img{float:left;margin-right:10px;}
 #feature-list li{font-size:12px;}
-#feature-list .affix{position:fixed;top:59px;}
+#feature-list .affix{position:relative;}
 #pricing-plans,#pricing-testimonials,#pricing-faqs{margin-bottom:60px;}
 .header_row_2 img{width:135px;margin:-30px 0 21px;}
 #pricing-plans h1{text-align:center;margin-bottom:0px;}
