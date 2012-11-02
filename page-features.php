@@ -15,6 +15,7 @@
 
 
 		<!-- Feature List -->
+		<div id="features-tb-wrapper">
 		<ul id="features-tb" class="nav nav-tabs">
 		  <li class="active"><a href="#features" data-toggle="tab"><i class="icon-list"></i> Features</a></li>
 		  <li><a href="#screenshots" data-toggle="tab"><i class="icon-picture"></i> Screenshots</a></li>
@@ -346,12 +347,28 @@
 		</div>
 
 		</div> <!-- end tab -->
-		  <div class="tab-pane" id="screenshots">gfdgfg</div>
-		  <div class="tab-pane" id="video">dsfgfdgf</div>
+		  <div class="tab-pane" id="screenshots">
+			<?php echo  do_shortcode('[gallery ids="17,18,19,20,21,22"]'); ?>
+
+		  </div>
+		  <div class="tab-pane" id="video">
+		  	<iframe width="853" height="480" src="http://www.youtube.com/embed/PaUFSW3bxF8?list=UUDdXCbySKUXkh44nHBPq07g&amp;hl=en_US" frameborder="0" allowfullscreen style="display:block; margin:0 auto"></iframe>
+		  </div>
 		  <div class="tab-pane" id="preview"><a target="_blank" href="http://demo.seedprod.com/coming-soon-pro/">Live Preview</a> has opened in a new window.</div>
 		  <div class="tab-pane" id="try"><a target="_blank" href="http://demo.seedprod.com">http://demo.seedprod.com</a> opened in a new tab.</div>
 		  <div class="tab-pane" id="changelog">
 		  	<h2>Changelog</h2>
+
+		  	<strong>3.5.0 - 10/17/12</strong>
+<ul>
+<li> Initialize class in init hook to avoid conflicts</li>
+<li>Added WYSIJA provider</li>
+<li>Added the ability to delete individual subscribers. Fixes #49</li>
+<li>Rearranged subscriber table and added sort options and referrer links</li>
+<li>Display the subscriber referrer url if they are already subscribed and resubmitted the front end form. Fixes Issue #50</li>
+<li>Expire the client view immediately when removed.</li>
+</ul>
+
 <strong>3.4.5 - 9/25/12</strong>
 <ul>
 	<li>Fixed a bug in headway themes in where is_page(0) = true and cause the site not to be viewable when logged in.</li>
@@ -591,6 +608,8 @@
 <strong>2.0.0</strong>
 <ul><li>Initial 2 Release</lI>
 </ul>
+
+</div>
 
 </div>
 
