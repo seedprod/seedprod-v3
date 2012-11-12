@@ -128,6 +128,7 @@
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-499993-14']);
 		  _gaq.push(['_setDomainName', 'seedprod.com']);
+		  _gaq.push(['_setAllowLinker', true]);
 		  _gaq.push(['_trackPageview']);
 		  _gaq.push(['_addTrans',
 		    '<?php echo $_GET['txn_id']; ?>',           // order ID - required
