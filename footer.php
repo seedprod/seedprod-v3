@@ -86,13 +86,13 @@
 	// Check to see if we have already processed this order
 	if(is_page('thank-you')){
 		global $wpdb;
-	    $tablename = $wpdb->prefix . "seedprod_processed";
+	    $tablename = "seed_transactions";
 	    $transaction_id = $_GET['txn_id'];
 		$sql = "SELECT transaction_id FROM $tablename WHERE transaction_id = %s";
 	    $safe_sql = $wpdb->prepare($sql,$transaction_id);
 	    $q = $wpdb->get_var($safe_sql);
 
-	    $tablename = $wpdb->prefix . "seedprod_orders";
+	    $tablename = "seed_orders";
 		$sql = "SELECT `order` FROM $tablename WHERE transaction_id = %s";
 	    $safe_sql = $wpdb->prepare($sql,$transaction_id);
 	    $order = $wpdb->get_var($safe_sql);
@@ -173,7 +173,7 @@
 		<?php 
 		// Process the order
 		global $wpdb;
-	    $tablename = $wpdb->prefix . "seedprod_processed";
+	    $tablename = "seed_transactions";
 	    $transaction_id = $_GET['txn_id'];
         $values = array(
             'transaction_id' => $transaction_id
