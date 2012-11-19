@@ -93,7 +93,7 @@
 	    $q = $wpdb->get_var($safe_sql);
 
 	    $tablename = "seed_orders";
-		$sql = "SELECT `order` FROM $tablename WHERE transaction_id = %s";
+		$sql = "SELECT `order_raw` FROM $tablename WHERE transaction_id = %s";
 	    $safe_sql = $wpdb->prepare($sql,$transaction_id);
 	    $order = $wpdb->get_var($safe_sql);
 	}
