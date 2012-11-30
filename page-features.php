@@ -26,6 +26,53 @@
 		</ul>
 		<div class="tab-content">
 		  <div class="tab-pane active" id="features">
+		  	<div class="well">
+		  		<div id="feature-list" class="row-fluid">
+		  			<div class="span4">
+			  			<div class="fl-feature" class="clearfix">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-wordpress.png" style="width:32px">
+					      <h3>Compatible</h3>
+			  				<ul>
+			  					<li>Works with any WordPress Theme
+			  						<small>Built with WordPress best practices and guidelines.</small>
+			  					</li>
+			  					<li>Automatic Updates through the WordPress Dashboard
+			  						<small>Just like plugins you download form WordPress.org</small>
+			  					</li>
+			  					<li>Multisite Support</li>
+			  					<li>Shortcode Support</li>
+			  					<li>Translation Ready i18n &amp RTL Support<small>All text strings displayed, can be translated to your language.</li>
+			  					<li>Built with HTML5 &amp; CSS3 using Bootstrap</li>
+			  				</ul>
+			  			</div>
+			  			<div class="fl-feature" class="clearfix">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-wordpress.png" style="width:32px">
+					      <h3>Access Controls</h3>
+			  				<ul>
+			  					<li>Acess</li>
+			  				</ul>
+			  			</div>
+		  			</div>
+		  			<div class="span4">
+		  				<div class="fl-feature" class="clearfix">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mail_plain.png" style="width:32px">
+					      <h3>Email Marketing</h3>
+			  				<ul>
+			  					<li>Acess</li>
+			  				</ul>
+			  			</div>
+		  			</div>
+		  			<div class="span4">
+		  				<div class="fl-feature" class="clearfix">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" style="width:32px">
+					      <h3>Social</h3>
+			  				<ul>
+			  					<li>Acess</li>
+			  				</ul>
+			  			</div>
+		  			</div>
+		  		</div>
+		  	</div>
 
 		<h2>Feature List</h2>
 		<div id="feature-list" class="row-fluid">
@@ -348,7 +395,19 @@
 
 		</div> <!-- end tab -->
 		  <div class="tab-pane" id="screenshots">
+<<<<<<< HEAD
 			<?php echo  do_shortcode('[gallery ids="12,13,14,15" link="file"]'); ?>
+=======
+		  	<div class="well">
+			<div class="row-fluid">
+				<div class="span8">
+					<img class="thumbnail alignnone size-large wp-image-24" title="video" src="http://153.9.5.29:8888/wordpress/wp-content/uploads/2012/11/video-1024x622.png" alt="" width="600" height="364" />
+                </div>
+                <div class="span4">Caption
+                </div>
+            </div>
+        	</div>
+>>>>>>> 4c6e202afa64dd02e4b4364c7ac62a97bc25ddd2
 
 		  </div>
 		  <div class="tab-pane" id="video">
