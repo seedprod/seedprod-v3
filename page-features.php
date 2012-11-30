@@ -67,7 +67,7 @@
 		      <li><a href="#feature22">Multisite Support</a></li>
 		      <li><a href="#feature23">HTML5 &amp; CSS3</a></li>
 		      <li><a href="#feature24">Translation Ready i18n Support</a></li>
-		      <li><a href="#feature25">Exclude URLs</a></li>
+		      <li><a href="#feature25">Include/Exclude URLs</a></li>
 		      
 		    </ul>
 		  </div>
@@ -185,16 +185,16 @@
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/podcast.png">
 		      <h3>Go Viral with the built Referral and Tracking System</h3>
 		      <p>
-		        Email subscribers receive a unique url to share. This allows you to track who subscribed who and who is your most influential user.
+		        Great for running a contest. Email subscribers receive a unique url to share. This allows you to track who subscribed who and who is your most influential user.
 		      </p>
 		    </div>
-		    <div id="feature35" class="fl-feature" class="clearfix">
+		   <!--  <div id="feature35" class="fl-feature" class="clearfix">
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/vcard.png">
 		      <h3>Insights</h3>
 		      <p>
 		        When you capture an email Coming Soon Pro tries to locate a picture and the first and last name of the user, even if you did not ask for one. It also tracks when and where the user signed up and who that user refers.
 		      </p>
-		    </div>
+		    </div> -->
 		    
 		    <div id="feature10" class="fl-feature" class="clearfix">
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/chimpy.png">
@@ -331,7 +331,7 @@
 		    </div>
 		    <div id="feature25" class="fl-feature" class="clearfix">
 		      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/web_blue.png">
-		      <h3>Exclude URLs</h3>
+		      <h3>Include/Exclude URLs</h3>
 		      <p>
 		        Sometimes you want to exclude certain pages from showing the Coming Soon page. Simply add in text from your url to the exclude field in the settings and voila.
 		      </p>
@@ -348,11 +348,11 @@
 
 		</div> <!-- end tab -->
 		  <div class="tab-pane" id="screenshots">
-			<?php echo  do_shortcode('[gallery ids="17,18,19,20,21,22"]'); ?>
+			<?php echo  do_shortcode('[gallery ids="12,13,14,15" link="file"]'); ?>
 
 		  </div>
 		  <div class="tab-pane" id="video">
-		  	<iframe width="853" height="480" src="http://www.youtube.com/embed/PaUFSW3bxF8?list=UUDdXCbySKUXkh44nHBPq07g&amp;hl=en_US" frameborder="0" allowfullscreen style="display:block; margin:0 auto"></iframe>
+		  	<iframe width="853" height="480" src="http://www.youtube.com/embed/PaUFSW3bxF8" frameborder="0" allowfullscreen style="display:block; margin:0 auto"></iframe>
 		  </div>
 		  <div class="tab-pane" id="preview"><a target="_blank" href="http://demo.seedprod.com/coming-soon-pro/">Live Preview</a> has opened in a new window.</div>
 		  <div class="tab-pane" id="try"><a target="_blank" href="http://demo.seedprod.com">http://demo.seedprod.com</a> opened in a new tab.</div>
