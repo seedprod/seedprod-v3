@@ -67,17 +67,17 @@
 
 
 	<!-- HelloBar -->
-	<script cf-async="false" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/hellobar-solo/hellobar.js"></script>
+	<!--<script cf-async="false" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/hellobar-solo/hellobar.js"></script>-->
 	<script>
-	    new HelloBar( '<span>BLACK FRIDAY SAVINGS! Use coupon code FRIDAY12 to save 30% on a Developer\'s License</span> <a href="http://www.seedprod.com/pricing" class="button">Buy Now</a>', {
-			showWait: 1000,
-		   	positioning: 'push',
-		    barColor:'#444',
-		    borderColor: '#fff',
-		    texture: 'light-gradient',
-			fonts: 'Arial, Helvetica, sans-serif',
-		    helloBarLogo: false
-		 }, 1.0 );
+	  //   new HelloBar( '<span>BLACK FRIDAY SAVINGS! Use coupon code FRIDAY12 to save 30% on a Developer\'s License</span> <a href="http://www.seedprod.com/pricing" class="button">Buy Now</a>', {
+			// showWait: 1000,
+		 //   	positioning: 'push',
+		 //    barColor:'#444',
+		 //    borderColor: '#fff',
+		 //    texture: 'light-gradient',
+			// fonts: 'Arial, Helvetica, sans-serif',
+		 //    helloBarLogo: false
+		 // }, 1.0 );
 	</script>
 	<?php } ?>
 
