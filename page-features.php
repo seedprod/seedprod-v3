@@ -91,7 +91,7 @@
 			  					<li>Integrated Google Fonts</li>
 			  					<li>Integrated with Typekit by Adobe</li>
 			  					<li>Responsive Full Browser Backgrounds</li>
-			  					<li>Full Screen Slideshows</li>
+			  					<li><span class="label label-success">New</span> Full Screen Slideshows</li>
 			  					<li>Custom Footer Branding
 			  						<small>Display your logo on a client site fixed to the bottom.</small>
 			  					</li>
