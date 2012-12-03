@@ -77,6 +77,7 @@
 			  					<li>WYSIJA Integration</li>
 			  					<li>Gravity Forms Integration</li>
 			  					<li>Store Emails in the WordPress Database</li>
+			  					<li>Ability to Capture Name along with the Email</li>
 			  				</ul>
 			  			</div>
 			  			<div class="fl-feature" class="clearfix">
@@ -90,6 +91,7 @@
 			  					<li>Integrated Google Fonts</li>
 			  					<li>Integrated with Typekit by Adobe</li>
 			  					<li>Responsive Full Browser Backgrounds</li>
+			  					<li>Full Screen Slideshows</li>
 			  					<li>Custom Footer Branding
 			  						<small>Display your logo on a client site fixed to the bottom.</small>
 			  					</li>
@@ -222,6 +224,22 @@
 		  <div class="tab-pane" id="try"><a target="_blank" href="http://demo.seedprod.com">http://demo.seedprod.com</a> opened in a new tab.</div>
 		  <div class="tab-pane" id="changelog">
 		  	<h2>Changelog</h2>
+
+		  	<strong>3.6.0 - 12/03/12</strong>
+		  	<ul>
+			<li>Added tighter Gravity Forms Integration. Now you can use the referral system and thank you page.</li>
+			<li>Fix: Removed the mis placed gravity forms notice under wysija settings</li>
+			<li>Upgrade Bootstrap Version to 2.2.1</li>
+			<li>Display the subscriber referrer url if they are already subscribed and resubmitted the frontend form for every mail provider.</li>
+			<li>The apikey field now hides the text</li>
+			<li>Fixed Tumblr share button not showing</li>
+			<li>Fixed a undefined variable notice in the admin</li>
+			<li>Rounded Conversion %'s</li>
+			<li>Updated Campaign Monotr's API code</li>
+			<li>Added a script area for conversion tracking.</li>
+			<li>Added a include url pattern</li>
+			<li>Added the ability to display a full screen slideshow.</li>
+			</ul>
 
 		  	<strong>3.5.0 - 10/17/12</strong>
 			<ul>
