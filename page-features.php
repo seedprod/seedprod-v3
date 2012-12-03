@@ -95,12 +95,7 @@
 			  					</li>
 			  					<li>Upgrade safe custom CSS &amp; Template</li>
 			  					<li>Upgrade safe custom Social Icons Support</li>
-			  					<li>Maintenance Mode
-			  						<small>Notify search engines that you are down without affecting your rank by delivering the proper 503 header http status.</small>
-			  					</li>
-			  					<li>Landing Page Mode
-			  						<small>After you launch use the plugin to create a landing page on your site or run a contest.</small>
-			  					</li>
+
 			  				</ul>
 			  			</div>
 
@@ -135,6 +130,12 @@
 			  					<li>Google Analytics Support</li>
 			  					<li>Custom Favicon</li>
 			  					<li>Import/Export Settings</li>
+			  					<li>Maintenance Mode
+			  						<small>Notify search engines that you are down without affecting your rank by delivering the proper 503 header http status.</small>
+			  					</li>
+			  					<li>Landing Page Mode
+			  						<small>After you launch use the plugin to create a landing page on your site or run a contest.</small>
+			  					</li>
 			  				</ul>
 			  			</div>
 		  			</div>
@@ -146,7 +147,7 @@
 		  	<div class="well">
 			<div class="row-fluid">
 				<div class="span9">
-					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/screenshot1-600x384.png" alt="" title="screenshot1" width="600" height="384" class="thumbnail alignnone size-large wp-image-343" />
+					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/screenshot1-600x384.png" alt="" width="600" height="384" class="thumbnail alignnone size-large wp-image-343" />
                 </div>
                 <div class="span3">
                 	<h4>Coming Soon Lead Generation Example</h4>
@@ -154,7 +155,7 @@
             </div>
             <div class="row-fluid">
                 <div class="span9">
-					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/thankyoupage-600x365.png" alt="" title="thankyoupage" width="600" height="365" class="thumbnail alignnone size-large wp-image-346" />
+					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/thankyoupage-600x365.png" alt="" width="600" height="365" class="thumbnail alignnone size-large wp-image-346" />
                 </div>
                 <div class="span3">
                 	<h4>After Sign Up Thank You Example</h4>
@@ -162,7 +163,7 @@
             </div>
             <div class="row-fluid">
                 <div class="span9">
-					<img class="thumbnail alignnone size-large wp-image-24" title="video" src="http://www.seedprod.com/wp-content/uploads/2012/11/video-600x364.png" alt="" width="600" height="364" />
+					<img class="thumbnail alignnone size-large wp-image-24"  src="http://www.seedprod.com/wp-content/uploads/2012/11/video-600x364.png" alt="" width="600" height="364" />
                 </div>
                 <div class="span3">
                 	<h4>Teaser Video Countdown Example</h4>
@@ -170,7 +171,7 @@
             </div>
             <div class="row-fluid">
                 <div class="span9">
-					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/forms-600x507.png" alt="" title="forms" width="600" height="507" class="thumbnail alignnone size-large wp-image-342" />
+					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/forms-600x507.png" alt=""  width="600" height="507" class="thumbnail alignnone size-large wp-image-342" />
                 </div>
                 <div class="span3">
                 	<h4>Gravity Forms Integration Example</h4>
@@ -178,7 +179,7 @@
             </div>
             <div class="row-fluid">
                 <div class="span9">
-					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/settings-600x2660.png" alt="" title="settings" width="600" height="2660" class="thumbnail alignnone size-large wp-image-344" />
+					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/settings-600x2660.png" alt=""  width="600" height="2660" class="thumbnail alignnone size-large wp-image-344" />
                 </div>
                 <div class="span3">
                 	<h4>Settings Tab</h4>
@@ -186,7 +187,7 @@
             </div>
             <div class="row-fluid">
               	<div class="span9">
-					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/design-600x1761.png" alt="" title="design" width="600" height="1761" class="thumbnail alignnone size-large wp-image-341" />
+					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/design-600x1761.png" alt=""  width="600" height="1761" class="thumbnail alignnone size-large wp-image-341" />
                 </div>
                 <div class="span3">
                 	<h4>Design Tab</h4>
@@ -194,7 +195,7 @@
             </div>
             <div class="row-fluid">
                 <div class="span9">
-					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/advanced-600x998.png" alt="" title="advanced" width="600" height="998" class="thumbnail alignnone size-large wp-image-340" />
+					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/advanced-600x998.png" alt=""  width="600" height="998" class="thumbnail alignnone size-large wp-image-340" />
                 </div>
                 <div class="span3">
                 	<h4>Advanced Tab</h4>
@@ -202,7 +203,7 @@
             </div>
             <div class="row-fluid">
                 <div class="span9">
-					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/subscribers-600x360.png" alt="" title="subscribers" width="600" height="360" class="thumbnail alignnone size-large wp-image-345" />
+					<img src="http://www.seedprod.com/wp-content/uploads/2012/11/subscribers-600x360.png" alt=""  width="600" height="360" class="thumbnail alignnone size-large wp-image-345" />
                 </div>
                 <div class="span3">
                 	<h4>Subscribers Tab</h4>
@@ -214,6 +215,7 @@
 
 		  </div><!-- end tab -->
 		  <div class="tab-pane" id="video">
+		  	<p>This is a video of Version 3.0.0, the current version of the plugin is 3.5.0 . Check out the Changelog for the updates. New update video walk through coming soon.</p>
 		  	<iframe width="853" height="480" src="http://www.youtube.com/embed/PaUFSW3bxF8" frameborder="0" allowfullscreen style="display:block; margin:0 auto"></iframe>
 		  </div><!-- end tab -->
 		  <div class="tab-pane" id="preview"><a target="_blank" href="http://demo.seedprod.com/coming-soon-pro/">Live Preview</a> has opened in a new window.</div>
@@ -473,6 +475,9 @@
 
 			</div><!-- End Last tab -->
 
+		</div>
+		<div style="margin:20px 0; text-align:center;">
+		<a href="/pricing/" class="btn btn-large btn-seedprod"><i class="icon-shopping-cart icon-white"></i> See Pricing</a> 
 		</div>
 	</div>
 
