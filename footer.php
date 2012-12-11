@@ -121,6 +121,10 @@
 	//if(is_page('thank-you') && !empty($_GET["gross"]) && $_GET["gross"] != '0.00' && is_null($q)){ 
 	if(is_page('thank-you') && !empty($_GET["gross"]) && is_null($q)){
 	?>
+
+		window.optimizely = window.optimizely || [];
+		window.optimizely.push(['trackEvent', 'Conversion', <?php echo $_GET["gross"] * 100 ?>]);
+
 		_kmq.push(['record', 'Conversion']);
 		_kmq.push(['record', 'billed', {'Billing Amount':'<?php echo $_GET["gross"] ?>'}]);
 

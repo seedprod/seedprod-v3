@@ -4,6 +4,7 @@
 		<?php 
 		// Load Kissmetric if the user is not logged in
 		if(!is_user_logged_in()) { ?>
+		<script src="//cdn.optimizely.com/js/4564016.js"></script>
 		<script type="text/javascript">
 		  var _kmq = _kmq || [];
 		  var _kmk = _kmk || '63828df3d2d2aeba257d2f7de26f8aa14dbe43e1';
