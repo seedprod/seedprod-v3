@@ -191,6 +191,7 @@
 					      <h3>Email Marketing &amp; Data Capture</h3>
 			  				<ul>
 			  					<li>MailChimp Integration</li>
+			  					<li><span class="label label-success">New</span>Mad Mimi Integration</li>
 			  					<li>Aweber Integration</li>
 			  					<li>Constant Contact Integration</li>
 			  					<li>Campaign Monitor Integration</li>
@@ -365,6 +366,14 @@
 		  <div class="tab-pane" id="try"><a target="_blank" href="http://demo.seedprod.com">http://demo.seedprod.com</a> opened in a new tab.</div>
 		  <div class="tab-pane" id="changelog">
 		  	<h2>Changelog</h2>
+
+		  	<strong>3.7.0 - 12/17/12</strong>
+		  	<ul>
+			<li>Added Mad Mimi API</li>
+			<li>Fix issue with Get Response API</li>
+			<li>Added Italian Translation</li>
+			</ul>
+
 
 		  	<strong>3.6.0 - 12/03/12</strong>
 		  	<ul>
