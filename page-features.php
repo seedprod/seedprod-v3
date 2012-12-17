@@ -191,7 +191,7 @@
 					      <h3>Email Marketing &amp; Data Capture</h3>
 			  				<ul>
 			  					<li>MailChimp Integration</li>
-			  					<li><span class="label label-success">New</span>Mad Mimi Integration</li>
+			  					<li><span class="label label-success">New</span> Mad Mimi Integration</li>
 			  					<li>Aweber Integration</li>
 			  					<li>Constant Contact Integration</li>
 			  					<li>Campaign Monitor Integration</li>
