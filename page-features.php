@@ -1,5 +1,126 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<?php 
+		// Load Kissmetric if the user is not logged in
+		if(!is_user_logged_in()) { ?>
+		<script src="//cdn.optimizely.com/js/4564016.js"></script>
+		<script type="text/javascript">
+		  var _kmq = _kmq || [];
+		  var _kmk = _kmk || '63828df3d2d2aeba257d2f7de26f8aa14dbe43e1';
+		  function _kms(u){
+		    setTimeout(function(){
+		      var d = document, f = d.getElementsByTagName('script')[0],
+		      s = d.createElement('script');
+		      s.type = 'text/javascript'; s.async = true; s.src = u;
+		      f.parentNode.insertBefore(s, f);
+		    }, 1);
+		  }
+		  _kms('//i.kissmetrics.com/i.js');
+		  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+		</script>
+		<?php } ?>
+		<meta charset="utf-8">
+		<title><?php wp_title( '' ); ?></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
+		<!-- Styles -->
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style-b.css" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- GA -->
+		<?php 
+		// Load Google Ananlytics if user is not logged in and not Thank You page
+		if(!is_user_logged_in()) { ?>
+		<?php if(!is_page('thank-you')) { ?>
+			<script>
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-499993-14']);
+				_gaq.push(['_setDomainName', 'seedprod.com']);
+				_gaq.push(['_setAllowLinker', true]);
+				_gaq.push(['_trackPageview']);
+
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+		<?php } ?>
+		<?php } ?>
+
+
+	<!-- load jQuery & wp-head -->
+	<?php wp_enqueue_script("jquery"); ?>
+	<?php wp_head(); ?>
+	
+	<?php 
+	// Load eJunkie code if is the Pricing page
+	if(is_page('pricing')){ ?>
+	<script language="javascript" type="text/javascript">
+			function EJEJC_lc(th) { return false; }
+			function EJEJC_config(){EJEJC_POSTCALL=true;}
+			function EJEJC_shown() {jQuery("#imgHeader").attr("src", "//s3.amazonaws.com/static.seedprod.com/seedprod-logo-157x40.png").css('margin','10px').css('height','40px');
+			jQuery("#tdPmntOptions > table").css('width','auto');
+			jQuery("#ejejctable td").css('border','1px solid #fff').css('padding','3px 5px');
+			jQuery("#ejejctable tr:eq(4) td,#ejejctable table").css('border','none');
+			}
+	</script>
+	<script src='//www.e-junkie.com/ecom/box.js' type='text/javascript'></script>
+	<?php } ?>
+	</head>
+
+	<body <?php body_class(); ?> data-spy="scroll" data-target="#featurespy">
+		<div id="pg">
+
+		<div id="hd">	
+		<div class="navbar navbar-inverse navbar-static-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="http://www.seedprod.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/seedprod-logo-white.png" alt="SeedProd Logo"></a>
+					<div class="nav-collapse collapse">
+						<ul class="nav pull-right">
+							<?php if(is_page('thank-you')): ?>
+							<li><a href="http://www.seedprod.com" >Back to SeedProd</a></li>
+							<?php else: ?>
+							<li><a href="/"><i class="icon-home icon-white"></i> Home</a></li>
+							<li><a href="/features/"><i class="icon-star icon-white"></i> Features</a></li>
+							<li><a href="/pricing/"><i class="icon-certificate icon-white"></i> Pricing</a></li>
+							<!-- <li><a href="http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing" onclick="_gaq.push(['_link',
+'http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing']); return false;">Pricing</a></li> -->
+							<li><a href="/showcase/"><i class="icon-picture icon-white"></i> Showcase</a></li>
+							<li><a href="/blog/"><i class="icon-pencil icon-white"></i> Blog</a></li>
+							<li><a href="/support/"><i class="icon-user icon-white"></i> Support</a></li>
+							<?php endif; ?>
+						</ul>
+					</div><!-- .nav-collapse -->
+				</div>
+
+			</div>
+		</div> <!-- /.navbar -->
+		<?php
+		if ( is_front_page() ) {
+			get_template_part( 'content', 'featured' );
+		}
+		?>
+	</div> <!-- /#hb -->
+	<div class="bt-header handscript">
+	</div>
+
+
+		<div id="bd">
+		<div class="container">
 
 
 		<!-- Banner -->
@@ -142,6 +263,26 @@
 			  			</div>
 		  			</div>
 		  		</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<blockquote class="twitter-tweet"><p>Looking for a "Coming Soon" solution for WordPress? <a href="http://t.co/OquhIcfp" title="http://Seedprod.com">Seedprod.com</a> is pretty hard to go past. Easiest config I've seen in ages.</p>&mdash; Dan Rippon (@danrippon) <a href="https://twitter.com/danrippon/status/216812725991510016" data-datetime="2012-06-24T08:39:16+00:00">June 24, 2012</a></blockquote>
+					</div>
+					<div class="span6">
+						<blockquote class="twitter-tweet"><p>Awesome! @<a href="https://twitter.com/seedprod">seedprod</a> Your plugin lives up to it's name - surpassed all my expectations. Now on my standard list of recommendations.</p>&mdash; Tony Kinard (@TonyKinard) <a href="https://twitter.com/TonyKinard/status/212375297176248321" data-datetime="2012-06-12T02:46:31+00:00">June 12, 2012</a></blockquote>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<blockquote class="twitter-tweet"><p>Just want to shout out @<a href="https://twitter.com/seedprod">seedprod</a> for seriously having the best coming soon plugin. Easy to use, beautiful to look at! Go check it out</p>&mdash; Jonathan (@SureFireWebServ) <a href="https://twitter.com/SureFireWebServ/status/210425206748094464" data-datetime="2012-06-06T17:37:33+00:00">June 6, 2012</a></blockquote>
+					</div>
+					<div class="span6">
+						<blockquote class="twitter-tweet"><p>Need to create a great coming soon page for your WordPress website? Try @<a href="https://twitter.com/seedprod">seedprod</a>Excellent customer support, too!</p>&mdash; Lisa League, ASID (@agirlandaMac) <a href="https://twitter.com/agirlandaMac/status/224142107932229632" data-datetime="2012-07-14T14:03:37+00:00">July 14, 2012</a></blockquote>
+					</div>
+				</div>
+				<br>
+				<p>
+					<a href="/testimonials/">See More Reviews <i class="icon-hand-right"></i></a>
+				</p>
 		  	</div>
 
 		  </div> <!-- end tab -->
