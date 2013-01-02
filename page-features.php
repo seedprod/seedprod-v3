@@ -367,6 +367,16 @@
 		  <div class="tab-pane" id="changelog">
 		  	<h2>Changelog</h2>
 
+		  	<strong>3.8.0 - 12/31/12</strong>
+		  	<ul>
+			<li>Show MailChimp Error Message</li>
+			<li>Show Preview even when an include pattern is present</li>
+			<li>Fixed bug on export introduced in WP 3.5: Warning: Missing argument 2 for wpdb::prepare()</li>
+			<li>Added the ability to use maintenance.php if it exists in maintenance mode.</li>
+			<li>Show referral stats when a user re-enter their email.</li>
+			<li>Added the ability to show name on WYSIJA forms.</li>
+			</ul>
+
 		  	<strong>3.7.0 - 12/17/12</strong>
 		  	<ul>
 			<li>Added Mad Mimi API</li>
