@@ -5,19 +5,21 @@
 
 				<h1>Terms &amp; Conditions</h1>
 		<p>The following terms and conditions govern all use of the SeedProd website and all content, services and products available at or through the website.</p>
-							<p>By purchasing from SeedProd, you agree to all of the Terms and Conditions. If you do not agree, please do not purchase and/or use SeedProd services or products.</p>
+							<p>By purchasing from SeedProd LLC, you agree to all of the Terms and Conditions. If you do not agree, please do not purchase and/or use SeedProd services or products.</p>
 							<ol>
 
 							<li><strong>Plugin Licence.</strong>&nbsp; All plugins created SeedProd are&nbsp;licensed under the <a href="http://www.gnu.org/licenses/gpl-2.0.html#TOC1">GLP V2</a>.</li>
-
+							<li>Personal License includes updates and support for 1 site.</li>
+							<li>Business License includes updates and support for 5 sites.</li>
+							<li>Developer License includes updates and support for unlimited sites.</li>
 							<li><strong>Support Policy</strong>
 							Technical support and software upgrades are provided electronically only (via the support forum and email, no telephone support) to customers who have an active license which they have purchased. Support and upgrades will be provided in accordance with the license as defined at the time of purchase.
 
 							SeedProd is happy to help if you are having trouble getting our plugins to work in your environment or find a bug. We also don't mind helping if you need a light modification. However any major modification that involves custom code or more than a few lines of css are out of scope of the support policy.</li>
 
 							<li><strong>Refund Policy</strong>
-							SeedProd wants to make sure you are happy with your purchase and that it works correctly in your environment. If you are unsatisfied for any reason SeedProd will issue a full refund within 30 days of your purchase.</li>
-
+							SeedProd wants to make sure you are happy with your purchase and that it works correctly in your environment. If you are unsatisfied for any reason SeedProd will issue a full refund within 30 days of your purchase from seedprod.com.</li>
+							If you've purchased a SeedProd product from a 3rd-party vendor or marketplace you are bound by their refund policy and terms.
 							<li><strong>Price Changes</strong>
 							SeedProd reserves the right to change the price of any product at any time. Any price change will be reflected on the website. In the event that any price is lowered, you will not be entitled to a refund in the difference in the price from the time you purchased SeedProd.</li>
 

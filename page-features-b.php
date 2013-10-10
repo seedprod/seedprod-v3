@@ -95,7 +95,7 @@
 							<li><a href="http://www.seedprod.com" >Back to SeedProd</a></li>
 							<?php else: ?>
 							<li><a href="/"><i class="icon-home icon-white"></i> Home</a></li>
-							<li><a href="/features/"><i class="icon-star icon-white"></i> Features</a></li>
+							<li><a href="/features-b/"><i class="icon-star icon-white"></i> Features</a></li>
 							<li><a href="/pricing/"><i class="icon-certificate icon-white"></i> Pricing</a></li>
 							<!-- <li><a href="http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing" onclick="_gaq.push(['_link',
 'http://sites.fastspring.com/seedprod/product/coming-soon-pro-pricing']); return false;">Pricing</a></li> -->

@@ -27,8 +27,9 @@
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
 		<!-- Styles -->
-		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+
 		<link type="text/css" rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style-b.css" />
+				<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -144,7 +145,7 @@
 			  <li><a href="#video" data-toggle="tab"><i class="icon-facetime-video"></i> Video</a></li>
 			  <li><a href="#preview" data-toggle="tab"><i class="icon-eye-open"></i> Live Preview</a></li>
 			  <li><a href="#try" data-toggle="tab"><i class="icon-thumbs-up"></i> Try Before You Buy</a></li>
-			  <li><a href="#changelog" data-toggle="tab"><i class="icon-list-alt"></i> Changelog</a></li>
+<!-- 			  <li><a href="#changelog" data-toggle="tab"><i class="icon-list-alt"></i> Changelog</a></li> -->
 			</ul>
 		<div class="tab-content">
 		  <div class="tab-pane active" id="features">
@@ -163,6 +164,7 @@
 			  					</li>
 			  					<li>Multisite Support</li>
 			  					<li>Shortcode Support</li>
+			  					<li>WPML Support</li>
 			  					<li>Translation Ready i18n &amp; RTL Support<small>All text strings displayed, can be translated to your language.</small></li>
 			  					<li>Built with HTML5 &amp; CSS3 using Bootstrap</li>
 			  				</ul>
@@ -190,14 +192,18 @@
 					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/chimpy.png" style="width:32px">
 					      <h3>Email Marketing &amp; Data Capture</h3>
 			  				<ul>
-			  					<li>MailChimp Integration</li>
-			  					<li><span class="label label-success">New</span> Mad Mimi Integration</li>
+			  					<li>MailChimp with Groups Integration</li>
+			  					<li>Mad Mimi Integration</li>
 			  					<li>Aweber Integration</li>
 			  					<li>Constant Contact Integration</li>
 			  					<li>Campaign Monitor Integration</li>
 			  					<li>GetResponse Integration</li>
-			  					<li>WYSIJA Integration</li>
+			  					<li>mailPoet formally WYSIJA Integration</li>
 			  					<li>Gravity Forms Integration</li>
+			  					<li>Sendy.co Integration</li>
+			  					<li><span class="label label-success">New</span> iContact Integration</li>
+			  					<li><span class="label label-success">New</span> Infusionsoft Integration</li>
+			  					<li>Use a Web Form from any 3rd Party Provider</li>
 			  					<li>Store Emails in the WordPress Database</li>
 			  					<li>Ability to Capture Name along with the Email</li>
 			  				</ul>
@@ -365,292 +371,7 @@
 		  <div class="tab-pane" id="preview"><a target="_blank" href="http://demo.seedprod.com/coming-soon-pro/">Live Preview</a> has opened in a new window.</div>
 		  <div class="tab-pane" id="try"><a target="_blank" href="http://demo.seedprod.com">http://demo.seedprod.com</a> opened in a new tab.</div>
 		  <div class="tab-pane" id="changelog">
-		  	<h2>Changelog</h2>
-
-		  	<strong>3.8.0 - 12/31/12</strong>
-		  	<ul>
-			<li>Show MailChimp Error Message</li>
-			<li>Show Preview even when an include pattern is present</li>
-			<li>Fixed bug on export introduced in WP 3.5: Warning: Missing argument 2 for wpdb::prepare()</li>
-			<li>Added the ability to use maintenance.php if it exists in maintenance mode.</li>
-			<li>Show referral stats when a user re-enter their email.</li>
-			<li>Added the ability to show name on WYSIJA forms.</li>
-			</ul>
-
-		  	<strong>3.7.0 - 12/17/12</strong>
-		  	<ul>
-			<li>Added Mad Mimi API</li>
-			<li>Fix issue with Get Response API</li>
-			<li>Added Italian Translation</li>
-			</ul>
-
-
-		  	<strong>3.6.0 - 12/03/12</strong>
-		  	<ul>
-			<li>Added tighter Gravity Forms Integration. Now you can use the referral system and thank you page.</li>
-			<li>Fix: Removed the mis placed gravity forms notice under wysija settings</li>
-			<li>Upgrade Bootstrap Version to 2.2.1</li>
-			<li>Display the subscriber referrer url if they are already subscribed and resubmitted the frontend form for every mail provider.</li>
-			<li>The apikey field now hides the text</li>
-			<li>Fixed Tumblr share button not showing</li>
-			<li>Fixed a undefined variable notice in the admin</li>
-			<li>Rounded Conversion %'s</li>
-			<li>Updated Campaign Monotr's API code</li>
-			<li>Added a script area for conversion tracking.</li>
-			<li>Added a include url pattern</li>
-			<li>Added the ability to display a full screen slideshow.</li>
-			</ul>
-
-		  	<strong>3.5.0 - 10/17/12</strong>
-			<ul>
-			<li> Initialize class in init hook to avoid conflicts</li>
-			<li>Added WYSIJA provider</li>
-			<li>Added the ability to delete individual subscribers. Fixes #49</li>
-			<li>Rearranged subscriber table and added sort options and referrer links</li>
-			<li>Display the subscriber referrer url if they are already subscribed and resubmitted the front end form. Fixes Issue #50</li>
-			<li>Expire the client view immediately when removed.</li>
-			</ul>
-
-			<strong>3.4.5 - 9/25/12</strong>
-			<ul>
-				<li>Fixed a bug in headway themes in where is_page(0) = true and cause the site not to be viewable when logged in.</li>
-			</ul>
-
-			<strong>3.4.4 - 9/24/12</strong>
-			<ul>
-				<li>Redeploy of 3.4.0 with patches</li>
-				<li>Add support to limit access by role issue#42</li>
-				<li>Add the ability to display the coming soon page on a single page to act like a landing page.</li>
-				<li>Add RTL css support for RTL languages - needs testing</li>
-				<li>Updated pot file</li>
-				<li>Updated Spanish translation</li>
-				<li>Added German translation</li>
-				<li>Fixed quotes encoding in custom css</li>
-				<li>Removed duplicatecampaignmonitor library warnings</li>
-			</ul>
-
-			<strong>3.4.3 - 9/20/12</strong>
-			<ul>
-				<li>Fixed bugs from 3.4.0 release</li>
-			</ul>
-
-			<strong>3.4.2 - 9/20/12</strong>
-			<ul>
-				<li>Rolled back to 3.3.1 due to a bug</li>
-			</ul>
-
-			<strong>3.4.1 - 9/19/12</strong>
-			<ul>
-				<li>Removed new warning and notices</li>
-			</ul>
-
-			<strong>3.3.0 - 8/26/12</strong>
-			<ul>
-				<li>Add countdown timer</li>
-				<li>Change ClientView cookie life 6 hours instead of browser session.</li>
-				<li>Fixed internal issue #43</li>
-			</ul>
-
-			<strong>3.2.0 - 8/16/12</strong>
-			<ul>
-				<li>Fixed class_exist bug</li>
-				<li>Updated plugin autoupdate methods</li>
-				<li>Tweaked iphone layout</li>
-				<li>update es_ES translation</li>
-			</ul>
-
-			<strong>3.1.2 - 8/10/12</strong>
-			<ul>
-				<li>Fixed share buttons display bug</li>
-			</ul>
-
-			<strong>3.1.1 - 8/06/12</strong>
-			<ul>
-				<li>Check that Gravity Forms class exist</li>
-				<li>Fixed FeedBurner label bug</li>
-				<li>Moved menu under Settings<br /></li>
-			</ul>
-
-			<strong>3.1.0 - 7/31/12</strong>
-			<ul>
-				<li>Added an upgrade safe way to add custom social icons</li>
-				<li>Removed test and sample folder from campaign monitor api</li>
-				<li>Fixed database int defaults</li>
-				<li>Fix iphone layout</li>
-				<li>Added work around in for mod_security 400 error</li>
-				<li>Updated .pot file</li>
-			</ul>
-
-			<strong>3.0.10 - 7/28/12</strong>
-			<ul>
-				<li>Removed default notifications</li>
-				<li>Updated pot file</li>
-			</ul>
-
-			<strong>3.0.9 - 7/25/12</strong>
-			<ul>
-				<li>Fixed progress bar animation</li>
-				<li>Fixed translation loading</li>
-				<li>Fixed date bug</li>
-			</ul>
-
-			<strong>3.0.8 - 7/20/12</strong>
-			<ul>
-				<li>Removed location look due to timeouts</li>
-			</ul>
-
-			<strong>3.0.1 - 3.0.7 - 7/15/12</strong>
-			<ul>
-				<li>Bug Fixes</li>
-			</ul>
-
-			<strong>3.0.0 - 7/10/12</strong>
-			<ul>
-				<li>Rebuilt underlying framework and UI to use all WordPress native components.</li>
-				<li>Abilityto customize the template in an upgrade safe way.</li>
-				<li>Embed videos in the description by by entering the url Example:<a href="http://www.youtube.com/watch?v=A-PRCQFXXJs" target="_blank">http://www.youtube.com/watch?v=A-PRCQFXXJs</a></li>
-				<li>Added Get Response as an email list provider</li>
-				<li>Added theabilityto capture First and Last name.</li>
-				<li>Made the after form submit process easier to understand.</li>
-				<li>Added PinIt and Tumblr to the Share Buttons</li>
-				<li>Added the ability to include a Facebook Like thumbnail image.</li>
-				<li>Built a referral system in to keep track of Subscribers, who the referrer and how many of those convert.</li>
-				<li>Added a progress bar with automatic completioncalculation.</li>
-				<li>Change the location of the footer credit to the fixed bottom right of the page.</li>
-				<li>Added more icon sizes.</li>
-				<li>Added more social follow icons: Twitter, Facebook, LinkedIn,Google Plus, YouTube, Flickr, Vimeo, Pinterest, Instagram, Foursquare, Tumblr, RSS, email</li>
-				<li>Drag &amp; Drop Change order of social follow icons</li>
-				<li>Made language strings easier to find</li>
-				<li>Created the foundation for an upcoming themes</li>
-				<li>Created the foundation for more background effects</li>
-				<li>Created the foundation for more text effects</li>
-				<li>More container options: color, positon, effects</li>
-				<li>Control access by IP</li>
-				<li>Enable templateresponsiveness</li>
-				<li>Better import/export using json</li>
-				<li>More insight into your subscribers. Tries to find theirreferral, avatar, name (if you did not ask for it) and where they are from automatically.</li>
-				<li>Inline Preview</li>
-				<li>Made maintenancemode easier to enable and added the ability to capture emails in maintenance mode.</li>
-			</ul>
-
-
-			<strong>2.6.3 - 7/04/12</strong>
-			<li>  Changed the priority in which the template redirect fires .</li>
-
-			<strong>2.6.2 - 6/18/12</strong>
-			<li>  Typekit fix</li>
-
-			<strong>2.6.1 - 6/15/12</strong>
-			<li>  3.4 fixes</li>
-
-			<strong>2.6.0 - 6/4/12</strong>
-			<li>Enabled Client View in Maintenance Mode</li>
-
-			<strong>2.5.3 - 5/30/12</strong>
-			<li>Revert</li>
-
-			<strong>2.5.2 - 5/30/12</strong>
-			<li>  Reverted - Don't show email strings if using gravity forms</li>
-
-			<strong>2.5.1 - 5/30/12</strong>
-			<li>Moved CSS to bottom of head so it can override all styles</li>
-			<li>  Don't show email strings if using gravity forms</li>
-
-			<strong>2.5.0 - 5/29/12</strong>
-			<li>Upated Gravity forms support to the latest version.</li>
-			<li>Shadow Box Opacity fallback support</li>
-			<li>Added Generator Tag</li>
-			<li>  Respect WordPress privacy settings</li>
-			<li>  Permalink notice for Client View to work.</li>
-			<li>  Made Language strings easier to find</li>
-			<li>  Added FeedBurner Language setting</li>
-			<li>Added FitVideo JS</li>
-			<li>Integrated Typekit</li>
-			<li>Fixed bug in Client URL when site in sub folder</li>
-
-			<strong>2.4.2</strong>
-			<ul>
-			<li>Added trim to client view url</li>
-			<li>Stripslashes on seo description</li>
-			</ul>
-
-			<strong>2.4.1</strong>
-			<ul>
-			<li>Fixed Mobile display view bug</li>
-			<li>Fixed feedburner issue</li>
-			</ul>
-
-			<strong>2.4.0</strong>
-			<ul>
-			<li>Added better MailChimp error feedback</li>
-			<li>Fixed bug in client view that if client returned to client view url in the same session they would get a 404</li>
-			<li>Fixed bug in client view if category used as permalink</li>
-			</ul>
-
-			<strong>2.3.2</strong>
-			<ul>
-			<li>Fixed bug where quotes where not render properly on Custom CSS</li>
-			</ul>
-
-			<strong>2.3.1</strong>
-			<ul>
-			<li>Fixed bug for users who had not previously set a shadow box opacity</li>
-			</ul>
-
-			<strong>2.3.0</strong>
-			<ul>
-			<li>Added IE 7 and IE8 support for fullscreen backgrounds</li>
-			<li>Ability to adjust opacity on the shadow box</li>
-			<li>Ability to use larger socila icons</li>
-			<li>Fix config array setup</li>
-			</ul>
-
-			<strong>2.2.1</strong>
-			<ul>
-			<li>Fix bug to allow contacts in Constant Contact to be added to multiple list</li>
-			<li>Fix database counter bug</li>
-			</ul>
-
-			<strong>2.2.0</strong>
-			<ul>
-			<li>Added Admin Bar Notification</li>
-			<li>Added Client View</li>
-			<li>Fixed Aweber Subscribe bug.</li>
-			</ul>
-
-			<strong>2.1.4</strong>
-			<ul>
-			<li>Fixed Custom CSS bug.</li>
-			</ul>
-
-			<strong>2.1.3</strong>
-			<ul>
-			<li>Check is JSON class already exist</li>
-			</ul>
-
-			<strong>2.1.2</strong>
-			<ul>
-			<li>Fixed wp-editor bug</li>
-			<li>Fix link color bug</li>
-			</ul>
-
-			<strong>2.1.1</strong>
-			<ul>
-			<li>Fixed a bug in the wp-editor and removed a consol.log</li>
-			<li>Must use version 3.3 or higher to activate</li>
-			</ul>
-
-
-			<strong>2.1.0</strong>
-			<ul>
-				<li>Added Pinterest Profile Link</li>
-				<li>Fixed Javascript wp-editor bug</li>
-			</ul>
-
-			<strong>2.0.0</strong>
-			<ul><li>Initial 2 Release</lI>
-			</ul>
-
+		 
 			</div><!-- End Last tab -->
 
 		</div>

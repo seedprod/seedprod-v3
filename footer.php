@@ -36,7 +36,7 @@
 						<div id="footer-3">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-footer.png">
 							<span>
-								Copyright &copy; <?php echo date('Y') ?> SeedProd
+								Copyright &copy; <?php echo date('Y') ?> SeedProd LLC
 							</span>
 							<a href="https://twitter.com/seedprod" class="twitter-follow-button" data-show-count="false">Follow @seedprod</a>
 						</div>
@@ -67,18 +67,24 @@
 
 
 	<!-- HelloBar -->
-	<!--<script cf-async="false" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/hellobar-solo/hellobar.js"></script>-->
+	<script cf-async="false" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/hellobar-solo/hellobar.js"></script>
+	<?php
+		$date = strtotime("November 28, 2012 1:00 AM");
+		$remaining = $date - time();
+		$hours_remaining = floor(($remaining % 86400) / 3600);
+	?>
 	<script>
-	  //   new HelloBar( '<span>BLACK FRIDAY SAVINGS! Use coupon code FRIDAY12 to save 30% on a Developer\'s License</span> <a href="http://www.seedprod.com/pricing" class="button">Buy Now</a>', {
+	  //   new HelloBar( 'Save 25% today in honor of Memorial Day! Use coupon code MEMORIAL13', {
 			// showWait: 1000,
 		 //   	positioning: 'push',
 		 //    barColor:'#444',
-		 //    borderColor: '#fff',
+		 //    borderColor: '#292929',
 		 //    texture: 'light-gradient',
 			// fonts: 'Arial, Helvetica, sans-serif',
 		 //    helloBarLogo: false
 		 // }, 1.0 );
 	</script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<?php } ?>
 
 	<!-- Record Kissmetric Events -->
@@ -121,10 +127,6 @@
 	//if(is_page('thank-you') && !empty($_GET["gross"]) && $_GET["gross"] != '0.00' && is_null($q)){ 
 	if(is_page('thank-you') && !empty($_GET["gross"]) && is_null($q)){
 	?>
-
-		window.optimizely = window.optimizely || [];
-		window.optimizely.push(['trackEvent', 'Conversion', <?php echo $_GET["gross"] * 100 ?>]);
-
 		_kmq.push(['record', 'Conversion']);
 		_kmq.push(['record', 'billed', {'Billing Amount':'<?php echo $_GET["gross"] ?>'}]);
 

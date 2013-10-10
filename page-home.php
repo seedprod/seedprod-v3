@@ -72,7 +72,7 @@
 		<!-- Integrated With -->
 		<div id="integration-partners">
 		    <strong>Integrated with these awesome companies...</strong>
-		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/integration-logos.png" class="thumbnail">
+		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/integration-logos-color.png" >
 		</div>
 	
 

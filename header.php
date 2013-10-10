@@ -42,7 +42,7 @@
 			<script>
 				var _gaq = _gaq || [];
 				_gaq.push(['_setAccount', 'UA-499993-14']);
-				_gaq.push(['_setDomainName', 'seedprod.com']);
+				//_gaq.push(['_setDomainName', 'seedprod.com']);
 				_gaq.push(['_setAllowLinker', true]);
 				_gaq.push(['_trackPageview']);
 
@@ -74,6 +74,19 @@
 	</script>
 	<script src='//www.e-junkie.com/ecom/box.js' type='text/javascript'></script>
 	<?php } ?>
+
+	<script>
+var _prum = [['id', '5175cfcbabe53d7e26000000'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/prum.min.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script>
+    
 	</head>
 
 	<body <?php body_class(); ?> data-spy="scroll" data-target="#featurespy">
